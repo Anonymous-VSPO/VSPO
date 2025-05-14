@@ -1,0 +1,50 @@
+{
+  "classes": {
+    "Impala": {
+      "rdfs:comment": "An african antelope http://en.wikipedia.org/wiki/Impala"
+    },
+    "RockDassie": {
+      "rdfs:comment": [
+        "They eat grasses and broad-leafed plants",
+        "http://en.wikipedia.org/wiki/Rock_Hyrax"
+      ]
+    },
+    "Warthog": {
+      "rdfs:comment": "Warthogs are Omnivorous http://en.wikipedia.org/wiki/Warthog"
+    },
+    "branch": {
+      "rdfs:comment": "Branches are parts of trees."
+    },
+    "carnivore": {
+      "rdfs:comment": "Carnivores are exactly those animals that eat only animals."
+    },
+    "giraffe": {
+      "rdfs:comment": [
+        "Giraffes are herbivores, and they eat only leaves.",
+        "they also eat twigs"
+      ]
+    },
+    "herbivore": {
+      "rdfs:comment": "Herbivores are exactly those animals that eat only plants or parts of plants "
+    },
+    "leaf": {
+      "rdfs:comment": "Leaves are parts of branches."
+    },
+    "lion": {
+      "rdfs:comment": "Lions are animals that eat only herbivores."
+    },
+    "plant": {
+      "rdfs:comment": "Plants are disjoint from animals."
+    },
+    "tasty-plant": {
+      "rdfs:comment": "Plants eaten both by herbivores and carnivores"
+    },
+    "tree": {
+      "rdfs:comment": [
+        "Trees are a type of plant.",
+        "'plant' is here a shorthand for plant kingdom"
+      ]
+    }
+  },
+  "properties": {}
+}
