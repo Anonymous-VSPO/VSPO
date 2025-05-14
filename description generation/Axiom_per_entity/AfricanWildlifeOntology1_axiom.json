@@ -1,0 +1,261 @@
+{
+  "classes": {
+    "AfricanWildlifeOntology1:Berry": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:FruitingBody"
+      ]
+    },
+    "Apple": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:FruitingBody"
+      ]
+    },
+    "AfricanWildlifeOntology1:CarnivorousPlant": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:plant"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:animal]"
+      ]
+    },
+    "AfricanWildlifeOntology1:Grass": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:plant"
+      ]
+    },
+    "AfricanWildlifeOntology1:Palmtree": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:plant"
+      ],
+      "disjointWith": [
+        "AfricanWildlifeOntology1:tree"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:has-part some not AfricanWildlifeOntology1:branch]"
+      ]
+    },
+    "AfricanWildlifeOntology1:tasty-plant": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:plant",
+        "([AfricanWildlifeOntology1:eaten-by some AfricanWildlifeOntology1:carnivore] and [AfricanWildlifeOntology1:eaten-by some AfricanWildlifeOntology1:herbivore])"
+      ]
+    },
+    "AfricanWildlifeOntology1:tree": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:plant"
+      ]
+    },
+    "AfricanWildlifeOntology1:Elephant": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:herbivore"
+      ]
+    },
+    "AfricanWildlifeOntology1:FruitingBody": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ]
+    },
+    "AfricanWildlifeOntology1:Phloem": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:is-proper-part-of some AfricanWildlifeOntology1:Stem]"
+      ]
+    },
+    "AfricanWildlifeOntology1:Root": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ]
+    },
+    "AfricanWildlifeOntology1:Stem": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ]
+    },
+    "AfricanWildlifeOntology1:Twig": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ]
+    },
+    "AfricanWildlifeOntology1:Xylem": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:is-proper-part-of some AfricanWildlifeOntology1:Stem]"
+      ]
+    },
+    "AfricanWildlifeOntology1:branch": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:tree]"
+      ]
+    },
+    "AfricanWildlifeOntology1:leaf": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:is-part-of some (AfricanWildlifeOntology1:Twig or AfricanWildlifeOntology1:branch)]"
+      ]
+    },
+    "AfricanWildlifeOntology1:Impala": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ]
+    },
+    "AfricanWildlifeOntology1:Omnivore": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ],
+      "disjointWith": [
+        "AfricanWildlifeOntology1:carnivore",
+        "AfricanWildlifeOntology1:herbivore"
+      ],
+      "equivalentClass": [
+        "([AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:animal] and [AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:plant] and [AfricanWildlifeOntology1:eats some ([AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:animal] or [AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:plant])])"
+      ]
+    },
+    "AfricanWildlifeOntology1:RockDassie": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ]
+    },
+    "AfricanWildlifeOntology1:Warthog": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal",
+        "([AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:FruitingBody] and [AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:Grass] and [AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:Root] and [AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:animal])"
+      ]
+    },
+    "AfricanWildlifeOntology1:carnivore": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ],
+      "disjointWith": [
+        "AfricanWildlifeOntology1:herbivore"
+      ],
+      "equivalentClass": [
+        "([AfricanWildlifeOntology1:eats only AfricanWildlifeOntology1:animal] or [AfricanWildlifeOntology1:eats only [AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:animal]])"
+      ]
+    },
+    "AfricanWildlifeOntology1:giraffe": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ],
+      "disjointWith": [
+        "AfricanWildlifeOntology1:lion"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:eats only (AfricanWildlifeOntology1:Twig or AfricanWildlifeOntology1:leaf)]"
+      ]
+    },
+    "AfricanWildlifeOntology1:herbivore": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ],
+      "equivalentClass": [
+        "([AfricanWildlifeOntology1:eats only AfricanWildlifeOntology1:plant] or [AfricanWildlifeOntology1:eats only [AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:plant]])"
+      ]
+    },
+    "AfricanWildlifeOntology1:lion": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:animal"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:eats only AfricanWildlifeOntology1:herbivore]",
+        "[AfricanWildlifeOntology1:eats some AfricanWildlifeOntology1:Impala]"
+      ]
+    },
+    "AfricanWildlifeOntology1:PlantParts": {
+      "subClassOf": [
+        "owl:Thing"
+      ],
+      "propertyRestrictions": [
+        "[AfricanWildlifeOntology1:is-proper-part-of some AfricanWildlifeOntology1:plant]"
+      ]
+    },
+    "Parsnip": {
+      "subClassOf": [
+        "AfricanWildlifeOntology1:Root"
+      ]
+    },
+    "AfricanWildlifeOntology1:animal": {
+      "disjointWith": [
+        "AfricanWildlifeOntology1:plant"
+      ]
+    }
+  },
+  "properties": {
+    "AfricanWildlifeOntology1:is-proper-part-of": {
+      "characteristics": [
+        "Irreflexive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "AfricanWildlifeOntology1:is-part-of"
+      ],
+      "inverseOf": []
+    },
+    "AfricanWildlifeOntology1:eaten-by": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "AfricanWildlifeOntology1:eats"
+      ]
+    },
+    "AfricanWildlifeOntology1:eats": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "(AfricanWildlifeOntology1:animal or AfricanWildlifeOntology1:plant or [AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:animal] or [AfricanWildlifeOntology1:is-part-of some AfricanWildlifeOntology1:plant])"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "AfricanWildlifeOntology1:has-part": {
+      "characteristics": [
+        "Transitive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "AfricanWildlifeOntology1:is-part-of"
+      ]
+    },
+    "AfricanWildlifeOntology1:is-part-of": {
+      "characteristics": [
+        "Transitive",
+        "Reflexive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    }
+  }
+}
