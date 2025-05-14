@@ -1,0 +1,3234 @@
+{
+  "classes": {
+    "Datatype Specification Language Representation": {
+      "subClassOf": [
+        "representation"
+      ],
+      "propertyRestrictions": [
+        "[represents some datatype]"
+      ]
+    },
+    "list specification": {
+      "subClassOf": [
+        "specification"
+      ]
+    },
+    "value space": {
+      "subClassOf": [
+        "specification"
+      ]
+    },
+    "tag-value list": {
+      "subClassOf": [
+        "specification"
+      ]
+    },
+    "procedure-paremeter declaration": {
+      "subClassOf": [
+        "specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some parameter]",
+        "[has_member some direction]"
+      ]
+    },
+    "direction": {
+      "subClassOf": [
+        "specification"
+      ]
+    },
+    "return-parameter specification": {
+      "subClassOf": [
+        "specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some datatype]",
+        "[has_identifier some parameter identifier]"
+      ]
+    },
+    "defined generator parameter": {
+      "subClassOf": [
+        "specification"
+      ],
+      "propertyRestrictions": [
+        "[has_identifier some parameter identifier]"
+      ]
+    },
+    "select-item specification": {
+      "subClassOf": [
+        "specification"
+      ]
+    },
+    "datatype generator": {
+      "subClassOf": [
+        "directive information entity"
+      ]
+    },
+    "characterizing operation": {
+      "subClassOf": [
+        "directive information entity"
+      ]
+    },
+    "data representational model": {
+      "subClassOf": [
+        "directive information entity"
+      ]
+    },
+    "datatype role": {
+      "subClassOf": [
+        "role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]"
+      ]
+    },
+    "excluding subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ],
+      "propertyRestrictions": [
+        "[has_member some select-list]"
+      ]
+    },
+    "explicit subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ]
+    },
+    "extending subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ],
+      "propertyRestrictions": [
+        "[has_member some extended-value-list]"
+      ]
+    },
+    "range subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ],
+      "propertyRestrictions": [
+        "[has_member some range]"
+      ]
+    },
+    "selection subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ],
+      "propertyRestrictions": [
+        "[has_member some select-list]"
+      ]
+    },
+    "size subtype generator": {
+      "subClassOf": [
+        "subtype generator"
+      ],
+      "propertyRestrictions": [
+        "[has_member some size]"
+      ]
+    },
+    "natural number": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "modulo": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "bit": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "bit string": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "character string": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "time interval": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "octet": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "octet string": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "private": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "object identifier": {
+      "subClassOf": [
+        "defined datatype"
+      ]
+    },
+    "non-directed labeled graph datatype": {
+      "subClassOf": [
+        "defined datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some non-directed labeled graph generator]",
+        "[has_member some graph aggregate component]"
+      ]
+    },
+    "labeled graph datatype": {
+      "subClassOf": [
+        "defined datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some directed labeled graph datatype generator]"
+      ]
+    },
+    "stack": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "tree": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "optional": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "directed labeled graph datatype generator": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "non-directed labeled graph generator": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "vector generator": {
+      "subClassOf": [
+        "defined generator"
+      ]
+    },
+    "array generator": {
+      "subClassOf": [
+        "homogenous aggregate generator"
+      ],
+      "disjointWith": [
+        "homogenous aggregate generator with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some unordered aggregate]",
+        "[has_quality some fixed size]",
+        "[has_quality some multi dimensional]",
+        "[has_quality some index access]",
+        "[has_quality some non-unique values]"
+      ]
+    },
+    "homogenous aggregate generator with variable size": {
+      "subClassOf": [
+        "homogenous aggregate generator"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some variable size]"
+      ]
+    },
+    "bag generator": {
+      "subClassOf": [
+        "homogenous unordered aggregate generator with variable size"
+      ],
+      "disjointWith": [
+        "set generator"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-unique values]",
+        "[has_quality some implementation dependent access]"
+      ]
+    },
+    "set generator": {
+      "subClassOf": [
+        "homogenous unordered aggregate generator with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some access by value]",
+        "[has_quality some unique values]"
+      ]
+    },
+    "class generator": {
+      "subClassOf": [
+        "heterogenous aggregate generator"
+      ],
+      "disjointWith": [
+        "record generator",
+        "table generator"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some key access]",
+        "[has_quality some unordered aggregate]",
+        "[has_quality some non-unique values]",
+        "[has_quality some one dimensional]",
+        "[has_quality some fixed size]"
+      ]
+    },
+    "record generator": {
+      "subClassOf": [
+        "heterogenous aggregate generator"
+      ],
+      "disjointWith": [
+        "table datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some fixed size]",
+        "[has_quality some one dimensional]",
+        "[has_quality some unordered aggregate]",
+        "[has_quality some key access]",
+        "[has_quality some non-unique values]"
+      ]
+    },
+    "table generator": {
+      "subClassOf": [
+        "heterogenous aggregate generator"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-unique values]",
+        "[has_quality some variable size]",
+        "[has_quality some unordered aggregate]",
+        "[has_quality some two dimensional]"
+      ]
+    },
+    "sequence generator": {
+      "subClassOf": [
+        "homogenous aggregate generator with variable size"
+      ],
+      "disjointWith": [
+        "homogenous unordered aggregate generator with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-unique values]",
+        "[has_quality some ordered aggregate]",
+        "[has_quality some position access]"
+      ]
+    },
+    "homogenous unordered aggregate generator with variable size": {
+      "subClassOf": [
+        "homogenous aggregate generator with variable size"
+      ],
+      "equivalentClass": [
+        "(bag generator or set generator)"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some unordered aggregate]"
+      ]
+    },
+    "choice generator": {
+      "subClassOf": [
+        "non-aggregate generator"
+      ],
+      "propertyRestrictions": [
+        "[is_member_of some choice datatype]"
+      ]
+    },
+    "pointer generator": {
+      "subClassOf": [
+        "non-aggregate generator"
+      ],
+      "propertyRestrictions": [
+        "[is_member_of some pointer datatype]"
+      ]
+    },
+    "procedure generator": {
+      "subClassOf": [
+        "non-aggregate generator"
+      ]
+    },
+    "table datatype": {
+      "subClassOf": [
+        "heterogenous aggregate datatype"
+      ],
+      "disjointWith": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some table generator]",
+        "[has_operation some IsEmpty:table]",
+        "[has_operation some MapToBag:table]",
+        "[has_operation some Insert:table]",
+        "[has_operation some Select:table]",
+        "[has_operation some MapToTable:table]",
+        "[has_member some field-list]",
+        "[has_quality some exact]",
+        "[has_operation some Delete:table]",
+        "[has_operation some Fetch:table]",
+        "[has_operation some Serialize:table]",
+        "[has_quality some non-numeric]"
+      ]
+    },
+    "class datatype": {
+      "subClassOf": [
+        "heterogenous aggregate datatype"
+      ],
+      "disjointWith": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some AttributeSelect:class]",
+        "[has_operation some AttributeReplace:class]",
+        "[has_operation some Equal:class]",
+        "[has_member some class generator]",
+        "[has_quality some non-ordered]",
+        "[has_quality some non-numeric]",
+        "[has_member some attribute-list]"
+      ]
+    },
+    "record (tuple) datatype": {
+      "subClassOf": [
+        "heterogenous aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-numeric]",
+        "[has_operation some FieldSelect:record]",
+        "[has_operation some Equal:record]",
+        "[has_quality some exact]",
+        "[has_quality some non-ordered]",
+        "[has_member some record generator]",
+        "[has_operation some FieldReplace:record]",
+        "[has_member some field-list]"
+      ]
+    },
+    "attribute identifier": {
+      "subClassOf": [
+        "identifier"
+      ]
+    },
+    "parameter identifier": {
+      "subClassOf": [
+        "identifier"
+      ]
+    },
+    "enumerated-value identifier": {
+      "subClassOf": [
+        "identifier"
+      ],
+      "propertyRestrictions": [
+        "[has-value some rdfs:Literal]"
+      ]
+    },
+    "discrete-value identifier": {
+      "subClassOf": [
+        "identifier"
+      ],
+      "propertyRestrictions": [
+        "[has-value some rdfs:Literal]"
+      ]
+    },
+    "extended-value identifier": {
+      "subClassOf": [
+        "identifier"
+      ]
+    },
+    "character-set identifier": {
+      "subClassOf": [
+        "identifier"
+      ]
+    },
+    "field identifier": {
+      "subClassOf": [
+        "identifier"
+      ]
+    },
+    "aggregate imposed ordering": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "aggregate-imposed identifier uniqueness",
+        "homogenity",
+        "agregate size",
+        "uniqueness",
+        "component mandatoriness",
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(ordered aggregate or unordered aggregate)"
+      ]
+    },
+    "aggregate-imposed identifier uniqueness": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "homogenity",
+        "agregate size",
+        "uniqueness",
+        "component mandatoriness",
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(identifier not unique or identifier unique)"
+      ]
+    },
+    "homogenity": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "agregate size",
+        "uniqueness",
+        "component mandatoriness",
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(homogenous or heterogenous)"
+      ]
+    },
+    "agregate size": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "uniqueness",
+        "component mandatoriness",
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(fixed size or variable size)"
+      ]
+    },
+    "uniqueness": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "component mandatoriness",
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(non-unique values or unique values)"
+      ]
+    },
+    "component mandatoriness": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "structurness",
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(component mandatory or component non-mandatory)"
+      ]
+    },
+    "structurness": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "recursiveness",
+        "access type"
+      ],
+      "equivalentClass": [
+        "(structured or unstructured or semi-structured)"
+      ]
+    },
+    "recursiveness": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "disjointWith": [
+        "access type"
+      ],
+      "equivalentClass": [
+        "(recursive or non-recursive)"
+      ]
+    },
+    "access type": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "equivalentClass": [
+        "(direct access property or indirect acess property)"
+      ]
+    },
+    "dimensionality": {
+      "subClassOf": [
+        "aggregate generator property"
+      ],
+      "equivalentClass": [
+        "(one dimensional or two dimensional or multi dimensional)"
+      ]
+    },
+    "primitive datatype": {
+      "subClassOf": [
+        "datatype"
+      ],
+      "disjointWith": [
+        "generated datatype",
+        "defined datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some equality]"
+      ]
+    },
+    "generated datatype": {
+      "subClassOf": [
+        "datatype"
+      ],
+      "disjointWith": [
+        "defined datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some generated datatype generator]"
+      ]
+    },
+    "defined datatype": {
+      "subClassOf": [
+        "datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some defined generator]",
+        "[has_member some defined datatype parameter-list]"
+      ]
+    },
+    "defined datatype parameter": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[has_identifier some parameter identifier]",
+        "[is_member_of some defined datatype parameter-list]",
+        "[role_of some datatype]"
+      ]
+    },
+    "field component": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]",
+        "[has_identifier some field identifier]"
+      ]
+    },
+    "tag-type": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]"
+      ]
+    },
+    "alternative-type": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]",
+        "[is_member_of some alternative component]"
+      ]
+    },
+    "alternative component": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[has_member some tag-value list]",
+        "[has_member some alternative-type]"
+      ]
+    },
+    "pointer-element-type": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]"
+      ]
+    },
+    "parameter": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]",
+        "[has_identifier some parameter identifier]"
+      ]
+    },
+    "index-type": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[has_member some index upperbound]",
+        "[is_member_of some index-type list]",
+        "[role_of some datatype]",
+        "[has_member some index lowerbound]"
+      ]
+    },
+    "base type": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[role_of some datatype]",
+        "[is_member_of some (array datatype or sequence datatype or bag datatype or set datatype or extended datatype)]"
+      ]
+    },
+    "attribute component": {
+      "subClassOf": [
+        "datatype role"
+      ],
+      "propertyRestrictions": [
+        "[has_identifier some attribute identifier]"
+      ]
+    },
+    "real field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "disjointWith": [
+        "boolean field-list",
+        "discrete field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some real field component]"
+      ]
+    },
+    "boolean field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "disjointWith": [
+        "discrete field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some boolean field component]"
+      ]
+    },
+    "discrete field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete field component]"
+      ]
+    },
+    "primitive field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some primitive field component]"
+      ]
+    },
+    "labeled dataset field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some labeled dataset target field component]",
+        "[has_member some labeled dataset descriptive field component]"
+      ]
+    },
+    "unlabeled dataset field-list": {
+      "subClassOf": [
+        "field-list"
+      ],
+      "propertyRestrictions": [
+        "[has_member some labeled dataset descriptive field component]"
+      ]
+    },
+    "date-time factor": {
+      "subClassOf": [
+        "factor"
+      ]
+    },
+    "scaled factor": {
+      "subClassOf": [
+        "factor"
+      ]
+    },
+    "real factor": {
+      "subClassOf": [
+        "factor"
+      ]
+    },
+    "complex factor": {
+      "subClassOf": [
+        "factor"
+      ]
+    },
+    "graph aggregate component": {
+      "subClassOf": [
+        "aggregate field component"
+      ]
+    },
+    "dyadic operation": {
+      "subClassOf": [
+        "characterizing operation"
+      ],
+      "disjointWith": [
+        "niladic operation",
+        "monadic operation",
+        "n-adic operation"
+      ]
+    },
+    "niladic operation": {
+      "subClassOf": [
+        "characterizing operation"
+      ],
+      "disjointWith": [
+        "monadic operation",
+        "n-adic operation"
+      ]
+    },
+    "monadic operation": {
+      "subClassOf": [
+        "characterizing operation"
+      ],
+      "disjointWith": [
+        "n-adic operation"
+      ]
+    },
+    "n-adic operation": {
+      "subClassOf": [
+        "characterizing operation"
+      ]
+    },
+    "attribute-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some attribute component]"
+      ]
+    },
+    "discrete-value-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete-value identifier]"
+      ]
+    },
+    "alternative-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some alternative component]"
+      ]
+    },
+    "procedure-parameter-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some procedure-paremeter declaration]"
+      ]
+    },
+    "defined generator parameter-list": {
+      "subClassOf": [
+        "list specification"
+      ]
+    },
+    "defined datatype parameter-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some defined datatype parameter]"
+      ]
+    },
+    "select-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some select-item specification]"
+      ]
+    },
+    "extended-value-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_identifier some extended-value identifier]"
+      ]
+    },
+    "index-type list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some index-type]"
+      ]
+    },
+    "enumerated-value-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some enumerated-value identifier]"
+      ]
+    },
+    "field-list": {
+      "subClassOf": [
+        "list specification"
+      ],
+      "propertyRestrictions": [
+        "[has_member some field component]"
+      ]
+    },
+    "tree datatype generator": {
+      "subClassOf": [
+        "directed labeled graph datatype generator"
+      ],
+      "disjointWith": [
+        "DAG datatype generator"
+      ]
+    },
+    "DAG datatype generator": {
+      "subClassOf": [
+        "directed labeled graph datatype generator"
+      ]
+    },
+    "array datatype": {
+      "subClassOf": [
+        "homogenous aggregate datatype"
+      ],
+      "disjointWith": [
+        "homogenous aggregate datatype with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Select:table]",
+        "[has_member some index-type list]",
+        "[has_quality some exact]",
+        "[has_operation some Replace:array]",
+        "[has_member some base type]",
+        "[has_quality some non-ordered]",
+        "[has_quality some non-numeric]",
+        "[has_operation some Equal:array]",
+        "[has_member some array generator]"
+      ]
+    },
+    "homogenous aggregate datatype with variable size": {
+      "subClassOf": [
+        "homogenous aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some homogenous aggregate generator with variable size]"
+      ]
+    },
+    "scaled datatype": {
+      "subClassOf": [
+        "numeric ordered primitive datatype"
+      ],
+      "disjointWith": [
+        "integer datatype",
+        "rational datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some unbounded]",
+        "[has_operation some Divide:scaled]",
+        "[has_operation some InOrder:scaled]",
+        "[has_operation some Multiply:scaled]",
+        "[has_member some scaled radix]",
+        "[has_quality some exact]",
+        "[has_operation some Negate:scaled]",
+        "[has_operation some Round:scaled]",
+        "[has_operation some Add:scaled]",
+        "[has_member some scaled factor]",
+        "[has_operation some Equal:scaled]"
+      ]
+    },
+    "real datatype": {
+      "subClassOf": [
+        "numeric ordered primitive datatype"
+      ],
+      "disjointWith": [
+        "integer datatype",
+        "rational datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Multiply:real]",
+        "[has_quality some approximate]",
+        "[has_operation some Negate:real]",
+        "[has_member some real radix]",
+        "[has_quality some unbounded]",
+        "[has_operation some Reciprocal:real]",
+        "[has_operation some InOrder:real]",
+        "[has_operation some Add:real]",
+        "[has_operation some Promote:real]",
+        "[has_operation some Equal:real]",
+        "[has_member some real factor]"
+      ]
+    },
+    "integer datatype": {
+      "subClassOf": [
+        "numeric ordered primitive datatype"
+      ],
+      "disjointWith": [
+        "rational datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some NonNegative:integer]",
+        "[has_quality some ordered]",
+        "[has_operation some Equal:integer]",
+        "[has_operation some InOrder:interger]",
+        "[has_quality some numeric]",
+        "[has_quality some exact]",
+        "[has_operation some Add:integer]",
+        "[has_quality some unbounded]",
+        "[has_operation some Multiply:integer]",
+        "[has_operation some Negate:integer]"
+      ]
+    },
+    "rational datatype": {
+      "subClassOf": [
+        "numeric ordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Multiply:rational]",
+        "[has_operation some Reciprocal:rational]",
+        "[has_quality some numeric]",
+        "[has_operation some NonNegative:rational]",
+        "[has_quality some ordered]",
+        "[has_operation some Promote:rational]",
+        "[has_operation some Equal:rational]",
+        "[has_operation some Add:rational]",
+        "[has_operation some Negate:rational]",
+        "[has_quality some exact]",
+        "[has_operation some InOrder:rational]",
+        "[has_quality some unbounded]"
+      ]
+    },
+    "non-aggregate generator": {
+      "subClassOf": [
+        "generated datatype generator"
+      ],
+      "disjointWith": [
+        "defined generator",
+        "aggregate datatype",
+        "aggregate generator"
+      ],
+      "equivalentClass": [
+        "(choice generator or pointer generator or procedure generator)"
+      ]
+    },
+    "aggregate generator": {
+      "subClassOf": [
+        "generated datatype generator"
+      ],
+      "equivalentClass": [
+        "(array generator or bag generator or class generator or record generator or sequence generator or set generator or table generator)"
+      ]
+    },
+    "identifier": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "value expression": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "label": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "directive information entity": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "representation": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "specification": {
+      "subClassOf": [
+        "information artifact entity"
+      ]
+    },
+    "exactness": {
+      "subClassOf": [
+        "datatype property"
+      ],
+      "disjointWith": [
+        "numericalness",
+        "cardinality",
+        "order",
+        "boundedness",
+        "equality"
+      ],
+      "equivalentClass": [
+        "(approximate or exact)"
+      ]
+    },
+    "numericalness": {
+      "subClassOf": [
+        "datatype property"
+      ],
+      "disjointWith": [
+        "cardinality",
+        "order",
+        "boundedness",
+        "equality"
+      ],
+      "equivalentClass": [
+        "(numeric or non-numeric)"
+      ]
+    },
+    "cardinality": {
+      "subClassOf": [
+        "datatype property"
+      ],
+      "disjointWith": [
+        "order",
+        "boundedness",
+        "equality"
+      ],
+      "equivalentClass": [
+        "(countable or finite or uncountable)"
+      ]
+    },
+    "order": {
+      "subClassOf": [
+        "datatype property"
+      ],
+      "disjointWith": [
+        "boundedness",
+        "equality"
+      ],
+      "equivalentClass": [
+        "(ordered or non-ordered)"
+      ]
+    },
+    "boundedness": {
+      "subClassOf": [
+        "datatype property"
+      ],
+      "disjointWith": [
+        "equality"
+      ],
+      "equivalentClass": [
+        "(bounded or unbounded)"
+      ]
+    },
+    "equality": {
+      "subClassOf": [
+        "datatype property"
+      ]
+    },
+    "vector datatype": {
+      "subClassOf": [
+        "array datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some vector generator]"
+      ]
+    },
+    "maximum-size": {
+      "subClassOf": [
+        "size"
+      ]
+    },
+    "minimum-size": {
+      "subClassOf": [
+        "size"
+      ]
+    },
+    "discrete field component": {
+      "subClassOf": [
+        "primitive field component"
+      ],
+      "disjointWith": [
+        "real field component",
+        "boolean field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some discrete datatype]"
+      ]
+    },
+    "real field component": {
+      "subClassOf": [
+        "primitive field component"
+      ],
+      "disjointWith": [
+        "boolean field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some real datatype]"
+      ]
+    },
+    "boolean field component": {
+      "subClassOf": [
+        "primitive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some boolean datatype]"
+      ]
+    },
+    "pointer datatype": {
+      "subClassOf": [
+        "non-aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-ordered]",
+        "[has_quality some non-numeric]",
+        "[has_member some pointer generator]",
+        "[has_member some pointer-element-type]",
+        "[has_operation some Equal:pointer]",
+        "[has_operation some Dereference:pointer]",
+        "[has_quality some exact]"
+      ]
+    },
+    "choice datatype": {
+      "subClassOf": [
+        "non-aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some exact]",
+        "[has_operation some Discriminant:choice]",
+        "[has_quality some non-ordered]",
+        "[has_operation some Tag:choice]",
+        "[has_operation some Cast:choice]",
+        "[has_operation some Equal:choice]",
+        "[has_member some tag-type]",
+        "[has_member some alternative-list]",
+        "[has_member some choice generator]"
+      ]
+    },
+    "procedure datatype": {
+      "subClassOf": [
+        "non-aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-numeric]",
+        "[has_member some procedure generator]",
+        "[has_quality some exact]",
+        "[has_member some procedure-parameter-list]",
+        "[has_member some return-parameter specification]",
+        "[has_operation some Equal:procedure]",
+        "[has_quality some non-ordered]",
+        "[has_operation some Invoke:procedure]"
+      ]
+    },
+    "tree datatype": {
+      "subClassOf": [
+        "labeled graph datatype"
+      ],
+      "disjointWith": [
+        "DAG datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some tree datatype generator]"
+      ]
+    },
+    "DAG datatype": {
+      "subClassOf": [
+        "labeled graph datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some DAG datatype generator]"
+      ]
+    },
+    "aggregate generator property": {
+      "subClassOf": [
+        "quality"
+      ]
+    },
+    "datatype property": {
+      "subClassOf": [
+        "quality"
+      ]
+    },
+    "upper bound": {
+      "subClassOf": [
+        "bound"
+      ],
+      "propertyRestrictions": [
+        "[has-value exactly 1 xsd:integer]"
+      ]
+    },
+    "lower bound": {
+      "subClassOf": [
+        "bound"
+      ],
+      "propertyRestrictions": [
+        "[has-value exactly 1 xsd:integer]"
+      ]
+    },
+    "index upperbound": {
+      "subClassOf": [
+        "bound"
+      ],
+      "propertyRestrictions": [
+        "[has-value exactly 1 xsd:integer]"
+      ]
+    },
+    "index lowerbound": {
+      "subClassOf": [
+        "bound"
+      ],
+      "propertyRestrictions": [
+        "[has-value exactly 1 xsd:integer]"
+      ]
+    },
+    "character datatype": {
+      "subClassOf": [
+        "non-numeric unordered primitive datatype"
+      ],
+      "disjointWith": [
+        "discrete datatype",
+        "boolean datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some exact]",
+        "[has_operation some Equal:character]",
+        "[has_identifier some character-set identifier]"
+      ]
+    },
+    "discrete datatype": {
+      "subClassOf": [
+        "non-numeric unordered primitive datatype"
+      ],
+      "disjointWith": [
+        "boolean datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete-value-list]",
+        "[has_operation some Equal:discrete]",
+        "[has_quality some exact]"
+      ]
+    },
+    "boolean datatype": {
+      "subClassOf": [
+        "non-numeric unordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-ordered]",
+        "[has_quality some non-numeric]",
+        "[has_quality some exact]",
+        "[has_operation some Not:boolean]",
+        "[has_operation some And:boolean]",
+        "[has_operation some Or:boolean]",
+        "[has_operation some Equal:boolean]"
+      ]
+    },
+    "defined generator": {
+      "subClassOf": [
+        "datatype generator"
+      ],
+      "propertyRestrictions": [
+        "[is_member_of some defined datatype]"
+      ]
+    },
+    "generated datatype generator": {
+      "subClassOf": [
+        "datatype generator"
+      ],
+      "equivalentClass": [
+        "(non-aggregate generator or aggregate generator)"
+      ],
+      "propertyRestrictions": [
+        "[is_member_of some generated datatype]"
+      ]
+    },
+    "subtype generator": {
+      "subClassOf": [
+        "datatype generator"
+      ]
+    },
+    "discrete base type": {
+      "subClassOf": [
+        "base type"
+      ],
+      "disjointWith": [
+        "real base type"
+      ],
+      "propertyRestrictions": [
+        "[role_of some discrete datatype]"
+      ]
+    },
+    "real base type": {
+      "subClassOf": [
+        "base type"
+      ],
+      "propertyRestrictions": [
+        "[role_of some real datatype]"
+      ]
+    },
+    "integer base datatype": {
+      "subClassOf": [
+        "base type"
+      ],
+      "propertyRestrictions": [
+        "[role_of some integer datatype]"
+      ]
+    },
+    "record of boolean datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "disjointWith": [
+        "record of real datatype",
+        "record of discrete datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some boolean field-list]"
+      ]
+    },
+    "record of real datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "disjointWith": [
+        "record of discrete datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some real field-list]"
+      ]
+    },
+    "record of primitives datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some primitive field-list]"
+      ]
+    },
+    "record of discrete datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete field-list]"
+      ]
+    },
+    "labeled dataset record datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member exactly 1 labeled dataset field-list]"
+      ]
+    },
+    "unlabeled dataset record datatype": {
+      "subClassOf": [
+        "record (tuple) datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some unlabeled dataset field-list]"
+      ]
+    },
+    "date-time unit": {
+      "subClassOf": [
+        "label"
+      ]
+    },
+    "set of discrete datatype": {
+      "subClassOf": [
+        "set datatype"
+      ],
+      "disjointWith": [
+        "set of real datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete base type]"
+      ]
+    },
+    "set of real datatype": {
+      "subClassOf": [
+        "set datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some real base type]"
+      ]
+    },
+    "set of integer datatype": {
+      "subClassOf": [
+        "set datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some integer base datatype]"
+      ]
+    },
+    "aggregate datatype": {
+      "subClassOf": [
+        "generated datatype"
+      ],
+      "disjointWith": [
+        "non-aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some aggregate generator]"
+      ]
+    },
+    "non-aggregate datatype": {
+      "subClassOf": [
+        "generated datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some non-aggregate generator]"
+      ]
+    },
+    "enumerated datatype": {
+      "subClassOf": [
+        "non-numeric ordered primitive datatype"
+      ],
+      "disjointWith": [
+        "date and time datatype",
+        "ordinal datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Equal:enumerated]",
+        "[has_member some enumerated-value-list]",
+        "[has_operation some Successor:enumerated]",
+        "[has_quality some bounded]",
+        "[has_operation some InOrder:enumerated]",
+        "[has_quality some exact]"
+      ]
+    },
+    "date and time datatype": {
+      "subClassOf": [
+        "non-numeric ordered primitive datatype"
+      ],
+      "disjointWith": [
+        "ordinal datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Extend:time&date]",
+        "[has_operation some Equal:time&date]",
+        "[has_operation some InOrder:time&date]",
+        "[has_member some date-time unit]",
+        "[has_operation some Difference:time&date]",
+        "[has_quality some unbounded]",
+        "[has_member some date-time radix]",
+        "[has_quality some exact]",
+        "[has_operation some Round:time&date]",
+        "[has_member some date-time factor]"
+      ]
+    },
+    "ordinal datatype": {
+      "subClassOf": [
+        "non-numeric ordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some InOrder:ordinal]",
+        "[has_quality some bounded below]",
+        "[has_quality some unbounded above]",
+        "[has_quality some ordered]",
+        "[has_operation some Successor:ordinal]",
+        "[has_operation some Equal:ordinal]",
+        "[has_quality some non-numeric]",
+        "[has_quality some exact]"
+      ]
+    },
+    "date-time radix": {
+      "subClassOf": [
+        "radix"
+      ]
+    },
+    "complex radix": {
+      "subClassOf": [
+        "radix"
+      ]
+    },
+    "real radix": {
+      "subClassOf": [
+        "radix"
+      ]
+    },
+    "scaled radix": {
+      "subClassOf": [
+        "radix"
+      ]
+    },
+    "factor": {
+      "subClassOf": [
+        "value expression"
+      ]
+    },
+    "size": {
+      "subClassOf": [
+        "value expression"
+      ],
+      "propertyRestrictions": [
+        "[has-value exactly 1 xsd:integer]"
+      ]
+    },
+    "radix": {
+      "subClassOf": [
+        "value expression"
+      ]
+    },
+    "range": {
+      "subClassOf": [
+        "value expression"
+      ],
+      "propertyRestrictions": [
+        "[has_member some lower bound]",
+        "[has_member some upper bound]"
+      ]
+    },
+    "bound": {
+      "subClassOf": [
+        "value expression"
+      ]
+    },
+    "datatype": {
+      "subClassOf": [
+        "data representational model"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some datatype property]",
+        "[has_operation some characterizing operation]",
+        "[has_attribute some value space]"
+      ]
+    },
+    "extended datatype": {
+      "subClassOf": [
+        "data representational model"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some datatype property]",
+        "[has_member some subtype generator]",
+        "[has_attribute some value space]",
+        "[has_member some base type]"
+      ]
+    },
+    "complex datatype": {
+      "subClassOf": [
+        "numeric primitive datatype"
+      ],
+      "disjointWith": [
+        "numeric ordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Reciprocal:complex]",
+        "[has_operation some Negate:complex]",
+        "[has_quality some non-ordered]",
+        "[has_member some complex radix]",
+        "[has_quality some numeric]",
+        "[has_operation some SquareRoot:complex]",
+        "[has_operation some Multiply:complex]",
+        "[has_operation some Add:complex]",
+        "[has_quality some approximate]",
+        "[has_operation some Promote:complex]",
+        "[has_member some complex factor]",
+        "[has_operation some Equal:complex]"
+      ]
+    },
+    "numeric ordered primitive datatype": {
+      "subClassOf": [
+        "numeric primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some ordered]"
+      ]
+    },
+    "sequence of discrete datatype": {
+      "subClassOf": [
+        "sequence datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some discrete base type]"
+      ]
+    },
+    "sequence of real datatype": {
+      "subClassOf": [
+        "sequence datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some real base type]"
+      ]
+    },
+    "sequence datatype": {
+      "subClassOf": [
+        "homogenous aggregate datatype with variable size"
+      ],
+      "disjointWith": [
+        "homogenous  unordered aggregate datatype with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Equal:sequence]",
+        "[has_quality some exact]",
+        "[has_operation some IsEmpty:sequence]",
+        "[has_quality some non-ordered]",
+        "[has_operation some Head:sequence]",
+        "[has_quality some non-numeric]",
+        "[has_member some base type]",
+        "[has_operation some Append:sequence]",
+        "[has_operation some Tail:sequence]",
+        "[has_member some sequence generator]"
+      ]
+    },
+    "homogenous  unordered aggregate datatype with variable size": {
+      "subClassOf": [
+        "homogenous aggregate datatype with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_member some homogenous unordered aggregate generator with variable size]"
+      ]
+    },
+    "bag datatype": {
+      "subClassOf": [
+        "homogenous  unordered aggregate datatype with variable size"
+      ],
+      "disjointWith": [
+        "set datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-ordered]",
+        "[has_operation some Select:bag]",
+        "[has_operation some Insert:bag]",
+        "[has_member some base type]",
+        "[has_operation some Delete:bag]",
+        "[has_operation some IsEmpty:bag]",
+        "[has_operation some Equal:bag]",
+        "[has_member some bag generator]",
+        "[has_quality some non-numeric]",
+        "[has_operation some Serialize:bag]",
+        "[has_quality some exact]"
+      ]
+    },
+    "set datatype": {
+      "subClassOf": [
+        "homogenous  unordered aggregate datatype with variable size"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-ordered]",
+        "[has_operation some Lsln:set]",
+        "[has_operation some Intersection:set]",
+        "[has_member some base type]",
+        "[has_operation some SetOf:set]",
+        "[has_member some set generator]",
+        "[has_operation some Select:set]",
+        "[has_operation some Equal:class]",
+        "[has_quality some non-numeric]",
+        "[has_quality some exact]",
+        "[has_operation some Empty:set]",
+        "[has_operation some Difference:set]",
+        "[has_operation some Union:set]",
+        "[has_operation some Subset:set]"
+      ]
+    },
+    "node component": {
+      "subClassOf": [
+        "graph aggregate component"
+      ],
+      "disjointWith": [
+        "edge component"
+      ]
+    },
+    "edge component": {
+      "subClassOf": [
+        "graph aggregate component"
+      ]
+    },
+    "aggregate field component": {
+      "subClassOf": [
+        "field component"
+      ],
+      "disjointWith": [
+        "primitive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some aggregate datatype]"
+      ]
+    },
+    "primitive field component": {
+      "subClassOf": [
+        "field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some primitive datatype]"
+      ]
+    },
+    "labeled dataset descriptive field component": {
+      "subClassOf": [
+        "field component"
+      ]
+    },
+    "labeled dataset target field component": {
+      "subClassOf": [
+        "field component"
+      ]
+    },
+    "void datatype": {
+      "subClassOf": [
+        "primitive datatype"
+      ],
+      "disjointWith": [
+        "non-numeric primitive datatype",
+        "numeric primitive datatype",
+        "non-numeric unordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_operation some Equal:void]"
+      ]
+    },
+    "non-numeric primitive datatype": {
+      "subClassOf": [
+        "primitive datatype"
+      ],
+      "disjointWith": [
+        "numeric primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-numeric]"
+      ]
+    },
+    "numeric primitive datatype": {
+      "subClassOf": [
+        "primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some numeric]"
+      ]
+    },
+    "homogenous aggregate generator": {
+      "subClassOf": [
+        "aggregate generator"
+      ],
+      "disjointWith": [
+        "heterogenous aggregate generator"
+      ],
+      "equivalentClass": [
+        "(array generator or bag generator or sequence generator or set generator)"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some homogenous]"
+      ]
+    },
+    "heterogenous aggregate generator": {
+      "subClassOf": [
+        "aggregate generator"
+      ],
+      "equivalentClass": [
+        "(class generator or record generator or table datatype)"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some heterogenous]"
+      ]
+    },
+    "non-numeric unordered primitive datatype": {
+      "subClassOf": [
+        "non-numeric primitive datatype"
+      ],
+      "disjointWith": [
+        "non-numeric ordered primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some non-ordered]"
+      ]
+    },
+    "non-numeric ordered primitive datatype": {
+      "subClassOf": [
+        "non-numeric primitive datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_quality some ordered]"
+      ]
+    },
+    "homogenous aggregate datatype": {
+      "subClassOf": [
+        "aggregate datatype"
+      ],
+      "disjointWith": [
+        "heterogenous aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some homogenous aggregate generator]"
+      ]
+    },
+    "heterogenous aggregate datatype": {
+      "subClassOf": [
+        "aggregate datatype"
+      ],
+      "propertyRestrictions": [
+        "[has_member some heterogenous aggregate generator]"
+      ]
+    },
+    "direct access property": {
+      "subClassOf": [
+        "access type"
+      ],
+      "disjointWith": [
+        "indirect acess property"
+      ],
+      "equivalentClass": [
+        "(index access or key access)"
+      ]
+    },
+    "indirect acess property": {
+      "subClassOf": [
+        "access type"
+      ],
+      "equivalentClass": [
+        "(access by value or implementation dependent access or position access)"
+      ]
+    },
+    "add operation": {
+      "subClassOf": [
+        "dyadic aritmetic operation"
+      ]
+    },
+    "multiply operation": {
+      "subClassOf": [
+        "dyadic aritmetic operation"
+      ]
+    },
+    "Divide:scaled": {
+      "subClassOf": [
+        "dyadic aritmetic operation"
+      ]
+    },
+    "delete operation": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "insert operation": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "Append:sequence": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "AttributeFunctionOverride:class": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "AttributeReplace:class": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "FieldReplace:record": {
+      "subClassOf": [
+        "dyadic updating operation"
+      ]
+    },
+    "difference operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic select operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic aritmetic operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic logical operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic set operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic updating operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic comparison operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "dyadic retrieve operation": {
+      "subClassOf": [
+        "dyadic operation"
+      ]
+    },
+    "equal operation": {
+      "subClassOf": [
+        "dyadic comparison operation"
+      ]
+    },
+    "in order operation": {
+      "subClassOf": [
+        "dyadic comparison operation"
+      ]
+    },
+    "isEmpty operation": {
+      "subClassOf": [
+        "boolean operation"
+      ]
+    },
+    "nonNegative operation": {
+      "subClassOf": [
+        "boolean operation"
+      ]
+    },
+    "SetOf:set": {
+      "subClassOf": [
+        "boolean operation"
+      ]
+    },
+    "negate operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "promote operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "serialize operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "successor operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Cast:choice": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Dereference:pointer": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Discriminant:choice": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Extend:time&date": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Invoke:procedure": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "Not:boolean": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "monadic aritmetic operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "monadic retrive operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "map operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "boolean operation": {
+      "subClassOf": [
+        "monadic operation"
+      ]
+    },
+    "reciprocial operation": {
+      "subClassOf": [
+        "monadic aritmetic operation"
+      ]
+    },
+    "round operation": {
+      "subClassOf": [
+        "monadic aritmetic operation"
+      ]
+    },
+    "SquareRoot:complex": {
+      "subClassOf": [
+        "monadic aritmetic operation"
+      ]
+    },
+    "monadic select operation": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "AttributeFunctionInvocation:class": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "AttributeSelect:class": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "FieldSelect:record": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "Head:sequence": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "Tail:sequence": {
+      "subClassOf": [
+        "monadic retrive operation"
+      ]
+    },
+    "countable": {
+      "subClassOf": [
+        "cardinality"
+      ]
+    },
+    "finite": {
+      "subClassOf": [
+        "cardinality"
+      ]
+    },
+    "uncountable": {
+      "subClassOf": [
+        "cardinality"
+      ]
+    },
+    "bounded above": {
+      "subClassOf": [
+        "bounded"
+      ],
+      "disjointWith": [
+        "bounded below"
+      ]
+    },
+    "bounded below": {
+      "subClassOf": [
+        "bounded"
+      ]
+    },
+    "unbounded above": {
+      "subClassOf": [
+        "unbounded"
+      ],
+      "disjointWith": [
+        "unbounded below"
+      ]
+    },
+    "unbounded below": {
+      "subClassOf": [
+        "unbounded"
+      ]
+    },
+    "bounded": {
+      "subClassOf": [
+        "boundedness"
+      ],
+      "disjointWith": [
+        "unbounded"
+      ]
+    },
+    "unbounded": {
+      "subClassOf": [
+        "boundedness"
+      ]
+    },
+    "approximate": {
+      "subClassOf": [
+        "exactness"
+      ],
+      "disjointWith": [
+        "exact"
+      ]
+    },
+    "exact": {
+      "subClassOf": [
+        "exactness"
+      ]
+    },
+    "numeric": {
+      "subClassOf": [
+        "numericalness"
+      ],
+      "disjointWith": [
+        "non-numeric"
+      ]
+    },
+    "non-numeric": {
+      "subClassOf": [
+        "numericalness"
+      ]
+    },
+    "ordered": {
+      "subClassOf": [
+        "order"
+      ],
+      "disjointWith": [
+        "non-ordered"
+      ]
+    },
+    "non-ordered": {
+      "subClassOf": [
+        "order"
+      ]
+    },
+    "Add:complex": {
+      "subClassOf": [
+        "add operation"
+      ]
+    },
+    "Add:integer": {
+      "subClassOf": [
+        "add operation"
+      ]
+    },
+    "Add:rational": {
+      "subClassOf": [
+        "add operation"
+      ]
+    },
+    "Add:real": {
+      "subClassOf": [
+        "add operation"
+      ]
+    },
+    "Add:scaled": {
+      "subClassOf": [
+        "add operation"
+      ]
+    },
+    "Delete:bag": {
+      "subClassOf": [
+        "delete operation"
+      ],
+      "disjointWith": [
+        "Delete:table"
+      ]
+    },
+    "Delete:table": {
+      "subClassOf": [
+        "delete operation"
+      ]
+    },
+    "Difference:set": {
+      "subClassOf": [
+        "difference operation"
+      ],
+      "disjointWith": [
+        "Difference:time&date"
+      ]
+    },
+    "Difference:time&date": {
+      "subClassOf": [
+        "difference operation"
+      ]
+    },
+    "Select:array": {
+      "subClassOf": [
+        "dyadic select operation"
+      ],
+      "disjointWith": [
+        "Select:table"
+      ]
+    },
+    "Select:table": {
+      "subClassOf": [
+        "dyadic select operation"
+      ]
+    },
+    "Equal:array": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:bag": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:boolean": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:character": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:choice": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:class": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:complex": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:enumerated": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:integer": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:ordinal": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:pointer": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:procedure": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:rational": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:real": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:record": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:scaled": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:sequence": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:set": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:discrete": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:table": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:time&date": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "Equal:void": {
+      "subClassOf": [
+        "equal operation"
+      ]
+    },
+    "InOrder:enumerated": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:interger": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:ordinal": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:rational": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:real": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:scaled": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "InOrder:time&date": {
+      "subClassOf": [
+        "in order operation"
+      ]
+    },
+    "Insert:bag": {
+      "subClassOf": [
+        "insert operation"
+      ],
+      "disjointWith": [
+        "Insert:table"
+      ]
+    },
+    "Insert:table": {
+      "subClassOf": [
+        "insert operation"
+      ]
+    },
+    "Multiply:complex": {
+      "subClassOf": [
+        "multiply operation"
+      ]
+    },
+    "Multiply:integer": {
+      "subClassOf": [
+        "multiply operation"
+      ]
+    },
+    "Multiply:rational": {
+      "subClassOf": [
+        "multiply operation"
+      ]
+    },
+    "Multiply:real": {
+      "subClassOf": [
+        "multiply operation"
+      ]
+    },
+    "Multiply:scaled": {
+      "subClassOf": [
+        "multiply operation"
+      ]
+    },
+    "And:boolean": {
+      "subClassOf": [
+        "dyadic logical operation"
+      ]
+    },
+    "Or:boolean": {
+      "subClassOf": [
+        "dyadic logical operation"
+      ]
+    },
+    "Fetch:table": {
+      "subClassOf": [
+        "dyadic retrieve operation"
+      ]
+    },
+    "Tag:choice": {
+      "subClassOf": [
+        "dyadic retrieve operation"
+      ]
+    },
+    "Intersection:set": {
+      "subClassOf": [
+        "dyadic set operation"
+      ]
+    },
+    "Lsln:set": {
+      "subClassOf": [
+        "dyadic set operation"
+      ]
+    },
+    "Subset:set": {
+      "subClassOf": [
+        "dyadic set operation"
+      ]
+    },
+    "Union:set": {
+      "subClassOf": [
+        "dyadic set operation"
+      ]
+    },
+    "IsEmpty:bag": {
+      "subClassOf": [
+        "isEmpty operation"
+      ]
+    },
+    "IsEmpty:sequence": {
+      "subClassOf": [
+        "isEmpty operation"
+      ]
+    },
+    "IsEmpty:table": {
+      "subClassOf": [
+        "isEmpty operation"
+      ]
+    },
+    "Select:bag": {
+      "subClassOf": [
+        "monadic select operation"
+      ],
+      "disjointWith": [
+        "Select:set"
+      ]
+    },
+    "Select:set": {
+      "subClassOf": [
+        "monadic select operation"
+      ]
+    },
+    "Negate:complex": {
+      "subClassOf": [
+        "negate operation"
+      ]
+    },
+    "Negate:integer": {
+      "subClassOf": [
+        "negate operation"
+      ]
+    },
+    "Negate:rational": {
+      "subClassOf": [
+        "negate operation"
+      ]
+    },
+    "Negate:real": {
+      "subClassOf": [
+        "negate operation"
+      ]
+    },
+    "Negate:scaled": {
+      "subClassOf": [
+        "negate operation"
+      ]
+    },
+    "NonNegative:integer": {
+      "subClassOf": [
+        "nonNegative operation"
+      ],
+      "disjointWith": [
+        "NonNegative:rational"
+      ]
+    },
+    "NonNegative:rational": {
+      "subClassOf": [
+        "nonNegative operation"
+      ]
+    },
+    "Promote:complex": {
+      "subClassOf": [
+        "promote operation"
+      ]
+    },
+    "Promote:rational": {
+      "subClassOf": [
+        "promote operation"
+      ]
+    },
+    "Promote:real": {
+      "subClassOf": [
+        "promote operation"
+      ]
+    },
+    "Reciprocal:rational": {
+      "subClassOf": [
+        "reciprocial operation"
+      ]
+    },
+    "Reciprocal:real": {
+      "subClassOf": [
+        "reciprocial operation"
+      ]
+    },
+    "Reciprocal:complex": {
+      "subClassOf": [
+        "reciprocial operation"
+      ]
+    },
+    "Round:scaled": {
+      "subClassOf": [
+        "round operation"
+      ],
+      "disjointWith": [
+        "Round:time&date"
+      ]
+    },
+    "Round:time&date": {
+      "subClassOf": [
+        "round operation"
+      ]
+    },
+    "Serialize:bag": {
+      "subClassOf": [
+        "serialize operation"
+      ],
+      "disjointWith": [
+        "Serialize:table"
+      ]
+    },
+    "Serialize:table": {
+      "subClassOf": [
+        "serialize operation"
+      ]
+    },
+    "Successor:enumerated": {
+      "subClassOf": [
+        "successor operation"
+      ],
+      "disjointWith": [
+        "Successor:ordinal"
+      ]
+    },
+    "Successor:ordinal": {
+      "subClassOf": [
+        "successor operation"
+      ]
+    },
+    "MapToBag:table": {
+      "subClassOf": [
+        "map operation"
+      ]
+    },
+    "MapToTable:table": {
+      "subClassOf": [
+        "map operation"
+      ]
+    },
+    "Replace:array": {
+      "subClassOf": [
+        "n-adic operation"
+      ]
+    },
+    "Empty:bag": {
+      "subClassOf": [
+        "niladic operation"
+      ]
+    },
+    "Empty:sequence": {
+      "subClassOf": [
+        "niladic operation"
+      ]
+    },
+    "Empty:set": {
+      "subClassOf": [
+        "niladic operation"
+      ]
+    },
+    "Empty:table": {
+      "subClassOf": [
+        "niladic operation"
+      ]
+    },
+    "index access": {
+      "subClassOf": [
+        "direct access property"
+      ],
+      "disjointWith": [
+        "key access"
+      ]
+    },
+    "key access": {
+      "subClassOf": [
+        "direct access property"
+      ]
+    },
+    "access by value": {
+      "subClassOf": [
+        "indirect acess property"
+      ]
+    },
+    "implementation dependent access": {
+      "subClassOf": [
+        "indirect acess property"
+      ]
+    },
+    "position access": {
+      "subClassOf": [
+        "indirect acess property"
+      ]
+    },
+    "ordered aggregate": {
+      "subClassOf": [
+        "aggregate imposed ordering"
+      ],
+      "disjointWith": [
+        "unordered aggregate"
+      ]
+    },
+    "unordered aggregate": {
+      "subClassOf": [
+        "aggregate imposed ordering"
+      ]
+    },
+    "identifier not unique": {
+      "subClassOf": [
+        "aggregate-imposed identifier uniqueness"
+      ],
+      "disjointWith": [
+        "identifier unique"
+      ]
+    },
+    "identifier unique": {
+      "subClassOf": [
+        "aggregate-imposed identifier uniqueness"
+      ]
+    },
+    "fixed size": {
+      "subClassOf": [
+        "agregate size"
+      ],
+      "disjointWith": [
+        "variable size"
+      ]
+    },
+    "variable size": {
+      "subClassOf": [
+        "agregate size"
+      ]
+    },
+    "component mandatory": {
+      "subClassOf": [
+        "component mandatoriness"
+      ],
+      "disjointWith": [
+        "component non-mandatory"
+      ]
+    },
+    "component non-mandatory": {
+      "subClassOf": [
+        "component mandatoriness"
+      ]
+    },
+    "one dimensional": {
+      "subClassOf": [
+        "dimensionality"
+      ]
+    },
+    "two dimensional": {
+      "subClassOf": [
+        "dimensionality"
+      ]
+    },
+    "multi dimensional": {
+      "subClassOf": [
+        "dimensionality"
+      ]
+    },
+    "homogenous": {
+      "subClassOf": [
+        "homogenity"
+      ],
+      "disjointWith": [
+        "heterogenous"
+      ]
+    },
+    "heterogenous": {
+      "subClassOf": [
+        "homogenity"
+      ]
+    },
+    "recursive": {
+      "subClassOf": [
+        "recursiveness"
+      ],
+      "disjointWith": [
+        "non-recursive"
+      ]
+    },
+    "non-recursive": {
+      "subClassOf": [
+        "recursiveness"
+      ]
+    },
+    "structured": {
+      "subClassOf": [
+        "structurness"
+      ]
+    },
+    "unstructured": {
+      "subClassOf": [
+        "structurness"
+      ]
+    },
+    "semi-structured": {
+      "subClassOf": [
+        "structurness"
+      ]
+    },
+    "non-unique values": {
+      "subClassOf": [
+        "uniqueness"
+      ],
+      "disjointWith": [
+        "unique values"
+      ]
+    },
+    "unique values": {
+      "subClassOf": [
+        "uniqueness"
+      ]
+    },
+    "descriptive field identifier": {
+      "subClassOf": [
+        "field identifier"
+      ],
+      "disjointWith": [
+        "target field identifier"
+      ]
+    },
+    "target field identifier": {
+      "subClassOf": [
+        "field identifier"
+      ]
+    },
+    "target primitive field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some (real datatype or discrete datatype or boolean datatype)]"
+      ]
+    },
+    "target boolean field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some boolean datatype]"
+      ]
+    },
+    "target discrete field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some discrete datatype]"
+      ]
+    },
+    "target real field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some real datatype]"
+      ]
+    },
+    "target sequence of real field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some sequence of real datatype]"
+      ]
+    },
+    "target hierarchical field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some (tree datatype or DAG datatype)]"
+      ]
+    },
+    "target DAG field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some DAG datatype]"
+      ]
+    },
+    "target tree field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some tree datatype]"
+      ]
+    },
+    "target set of discrete field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some set of discrete datatype]"
+      ]
+    },
+    "target record of primitives field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of primitives datatype]"
+      ]
+    },
+    "target record of boolean field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of boolean datatype]"
+      ]
+    },
+    "target record of discrete field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of discrete datatype]"
+      ]
+    },
+    "target record of reals field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of real datatype]"
+      ]
+    },
+    "target structured field component": {
+      "subClassOf": [
+        "labeled dataset target field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some (table datatype or array datatype or class datatype or sequence datatype or bag datatype or set datatype)]"
+      ]
+    },
+    "descriptive record of primitives field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of primitives datatype]"
+      ]
+    },
+    "descriptive record of reals field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of real datatype]"
+      ]
+    },
+    "descriptive record of boolean field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of boolean datatype]"
+      ]
+    },
+    "descriptive record of discrete field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some record of discrete datatype]"
+      ]
+    },
+    "descriptive set of integer field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some set of integer datatype]"
+      ]
+    },
+    "descriptive strucured field component": {
+      "subClassOf": [
+        "labeled dataset descriptive field component"
+      ],
+      "propertyRestrictions": [
+        "[role_of some (array datatype or class datatype or sequence datatype or bag datatype or set datatype)]"
+      ]
+    },
+    "positive integer": {
+      "subClassOf": [
+        "extended datatype"
+      ]
+    },
+    "positive integer range generator": {
+      "subClassOf": [
+        "range subtype generator"
+      ]
+    }
+  },
+  "properties": {
+    "has_identifier": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "has_attribute"
+      ],
+      "inverseOf": []
+    },
+    "is-about": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "is_member_of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "attribute_of"
+      ],
+      "inverseOf": [
+        "has_member"
+      ]
+    },
+    "is_quality_of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "has_quality"
+      ]
+    },
+    "has_operation": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "has_attribute"
+      ],
+      "inverseOf": []
+    },
+    "has-value": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "identifier_for": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "attribute_of"
+      ],
+      "inverseOf": [
+        "has_identifier"
+      ]
+    },
+    "has_role": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "has_quality": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "represents": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "has_attribute": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": [
+        "has_attribute"
+      ]
+    },
+    "has_member": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "has_attribute"
+      ],
+      "inverseOf": []
+    },
+    "role_of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": [
+        "has_role"
+      ]
+    },
+    "attribute_of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "denotes": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "is-about"
+      ],
+      "inverseOf": []
+    },
+    "is_operation_of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "attribute_of"
+      ],
+      "inverseOf": [
+        "has_operation"
+      ]
+    },
+    "owl:topObjectProperty": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "classes": {
+    "Berry": {
+      "subClassOf": [
+        "FruitingBody"
+      ]
+    },
+    "Apple": {
+      "subClassOf": [
+        "FruitingBody"
+      ]
+    },
+    "CarnivorousPlant": {
+      "subClassOf": [
+        "plant"
+      ],
+      "propertyRestrictions": [
+        "[eats some animal]"
+      ]
+    },
+    "Grass": {
+      "subClassOf": [
+        "plant"
+      ]
+    },
+    "Palmtree": {
+      "subClassOf": [
+        "plant"
+      ],
+      "disjointWith": [
+        "tree"
+      ],
+      "propertyRestrictions": [
+        "[has-part some not branch]"
+      ]
+    },
+    "tasty-plant": {
+      "subClassOf": [
+        "plant",
+        "([eaten-by some carnivore] and [eaten-by some herbivore])"
+      ]
+    },
+    "tree": {
+      "subClassOf": [
+        "plant"
+      ]
+    },
+    "Elephant": {
+      "subClassOf": [
+        "herbivore"
+      ]
+    },
+    "FruitingBody": {
+      "subClassOf": [
+        "PlantParts"
+      ]
+    },
+    "Phloem": {
+      "subClassOf": [
+        "PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[is-proper-part-of some Stem]"
+      ]
+    },
+    "Root": {
+      "subClassOf": [
+        "PlantParts"
+      ]
+    },
+    "Stem": {
+      "subClassOf": [
+        "PlantParts"
+      ]
+    },
+    "Twig": {
+      "subClassOf": [
+        "PlantParts"
+      ]
+    },
+    "Xylem": {
+      "subClassOf": [
+        "PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[is-proper-part-of some Stem]"
+      ]
+    },
+    "branch": {
+      "subClassOf": [
+        "PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[is-part-of some tree]"
+      ]
+    },
+    "leaf": {
+      "subClassOf": [
+        "PlantParts"
+      ],
+      "propertyRestrictions": [
+        "[is-part-of some (Twig or branch)]"
+      ]
+    },
+    "Impala": {
+      "subClassOf": [
+        "animal"
+      ]
+    },
+    "Omnivore": {
+      "subClassOf": [
+        "animal"
+      ],
+      "disjointWith": [
+        "carnivore",
+        "herbivore"
+      ],
+      "equivalentClass": [
+        "([eats some animal] and [eats some plant] and [eats some ([is-part-of some animal] or [is-part-of some plant])])"
+      ]
+    },
+    "RockDassie": {
+      "subClassOf": [
+        "animal"
+      ]
+    },
+    "Warthog": {
+      "subClassOf": [
+        "animal",
+        "([eats some FruitingBody] and [eats some Grass] and [eats some Root] and [eats some animal])"
+      ]
+    },
+    "carnivore": {
+      "subClassOf": [
+        "animal"
+      ],
+      "disjointWith": [
+        "herbivore"
+      ],
+      "equivalentClass": [
+        "([eats only animal] or [eats only [is-part-of some animal]])"
+      ]
+    },
+    "giraffe": {
+      "subClassOf": [
+        "animal"
+      ],
+      "disjointWith": [
+        "lion"
+      ],
+      "propertyRestrictions": [
+        "[eats only (Twig or leaf)]"
+      ]
+    },
+    "herbivore": {
+      "subClassOf": [
+        "animal"
+      ],
+      "equivalentClass": [
+        "([eats only plant] or [eats only [is-part-of some plant]])"
+      ]
+    },
+    "lion": {
+      "subClassOf": [
+        "animal"
+      ],
+      "propertyRestrictions": [
+        "[eats only herbivore]",
+        "[eats some Impala]"
+      ]
+    },
+    "PlantParts": {
+      "subClassOf": [
+        "owl:Thing"
+      ],
+      "propertyRestrictions": [
+        "[is-proper-part-of some plant]"
+      ]
+    },
+    "Parsnip": {
+      "subClassOf": [
+        "Root"
+      ]
+    },
+    "animal": {
+      "disjointWith": [
+        "plant"
+      ]
+    }
+  },
+  "properties": {
+    "is-proper-part-of": {
+      "characteristics": [
+        "Irreflexive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "is-part-of"
+      ],
+      "inverseOf": []
+    },
+    "eaten-by": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "eats"
+      ]
+    },
+    "eats": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "(animal or plant or [is-part-of some animal] or [is-part-of some plant])"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "has-part": {
+      "characteristics": [
+        "Transitive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "is-part-of"
+      ]
+    },
+    "is-part-of": {
+      "characteristics": [
+        "Transitive",
+        "Reflexive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    }
+  }
+}

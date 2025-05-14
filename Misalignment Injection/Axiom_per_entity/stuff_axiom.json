@@ -1,0 +1,857 @@
+{
+  "classes": {
+    "AbstractRegion": {
+      "subClassOf": [
+        "Region"
+      ]
+    },
+    "PhysicalRegion": {
+      "subClassOf": [
+        "Region"
+      ]
+    },
+    "om-1:Quantity": {
+      "subClassOf": [
+        "Region"
+      ]
+    },
+    "AmountOfStuff": {
+      "subClassOf": [
+        "PhysicalEndurant"
+      ]
+    },
+    "Container": {
+      "subClassOf": [
+        "PhysicalEndurant"
+      ],
+      "propertyRestrictions": [
+        "[inverseOf containedIn only (AmountOfStuff or PhysicalObject)]"
+      ]
+    },
+    "PhysicalObject": {
+      "subClassOf": [
+        "PhysicalEndurant"
+      ],
+      "disjointWith": [
+        "Stuff"
+      ]
+    },
+    "Stuff": {
+      "subClassOf": [
+        "PhysicalEndurant"
+      ],
+      "propertyRestrictions": [
+        "[hasState only StuffState]",
+        "[hasState max 3 StuffState]"
+      ]
+    },
+    "AssociationalColloid": {
+      "subClassOf": [
+        "Colloid"
+      ]
+    },
+    "DispersionColloid": {
+      "subClassOf": [
+        "Colloid"
+      ]
+    },
+    "MolecularColloid": {
+      "subClassOf": [
+        "Colloid"
+      ]
+    },
+    "Atom": {
+      "subClassOf": [
+        "PhysicalObject"
+      ]
+    },
+    "Ion": {
+      "subClassOf": [
+        "PhysicalObject"
+      ]
+    },
+    "Molecule": {
+      "subClassOf": [
+        "PhysicalObject"
+      ],
+      "propertyRestrictions": [
+        "[hasPart some Atom]"
+      ]
+    },
+    "MultiMoleculeParticle": {
+      "subClassOf": [
+        "PhysicalObject"
+      ]
+    },
+    "Bulk": {
+      "subClassOf": [
+        "Stuff",
+        "(([hasGranuleType some (Molecule or MultiMoleculeParticle)] or [hasPartStuff some Stuff]) and ([hasGranuleType only (Molecule or MultiMoleculeParticle)] or [hasPartStuff only Stuff]))",
+        "(MixedStuff or StructuredPureStuff)"
+      ]
+    },
+    "MixedStuff": {
+      "subClassOf": [
+        "Stuff",
+        "(Stuff and [hasPartStuff min 2 Stuff])"
+      ],
+      "disjointWith": [
+        "PureStuff"
+      ]
+    },
+    "PureStuff": {
+      "subClassOf": [
+        "Stuff"
+      ],
+      "equivalentClass": [
+        "(Stuff and [hasGranuleType exactly 1 (Atom or Molecule or MultiMoleculeParticle)] and [hasPartStuff exactly 1 (PureBulk or StructuredPureStuff or UnstructuredPureStuff)] and [hasStuffDistribution exactly 1 EvenDistribution])"
+      ]
+    },
+    "Colloid": {
+      "subClassOf": [
+        "HomogeneousMixture"
+      ],
+      "equivalentClass": [
+        "(HomogeneousMixture and [hasPartStuff exactly 1 (Stuff and [hasState some StuffState] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some StuffState] and [inverseOf srInheresIn some DispersedPhase])] and [hasNrOfPhase some DatatypeRestriction(xsd:int minInclusive 2)])"
+      ]
+    },
+    "Solution": {
+      "subClassOf": [
+        "HomogeneousMixture"
+      ],
+      "equivalentClass": [
+        "(HomogeneousMixture and [hasPartStuff some (Stuff and [inverseOf srInheresIn some Solute] and [hasGranuleType only (Atom or Ion or Molecule)])] and [hasPartStuff some (Stuff and [inverseOf srInheresIn some Solvent] and [hasGranuleType only (Atom or Ion or Molecule)])] and [hasNrOfPhase some DatatypeRestriction(xsd:int minInclusive 2)])"
+      ]
+    },
+    "ContinuousMedium": {
+      "subClassOf": [
+        "StuffRole"
+      ],
+      "disjointWith": [
+        "DispersedPhase"
+      ],
+      "propertyRestrictions": [
+        "[colloidFormingRelation some DispersedPhase]"
+      ]
+    },
+    "DispersedPhase": {
+      "subClassOf": [
+        "StuffRole"
+      ]
+    },
+    "Solute": {
+      "subClassOf": [
+        "StuffRole"
+      ],
+      "disjointWith": [
+        "Solvent"
+      ],
+      "propertyRestrictions": [
+        "[inverseOf solutionFormingRelation some Solvent]"
+      ]
+    },
+    "Solvent": {
+      "subClassOf": [
+        "StuffRole"
+      ]
+    },
+    "Distribution": {
+      "subClassOf": [
+        "Quality"
+      ],
+      "propertyRestrictions": [
+        "[hasQuale some (EvenDistribution or UnevenDistribution)]"
+      ]
+    },
+    "Drop": {
+      "subClassOf": [
+        "Piece"
+      ]
+    },
+    "Lump": {
+      "subClassOf": [
+        "Piece"
+      ]
+    },
+    "Slice": {
+      "subClassOf": [
+        "Piece"
+      ]
+    },
+    "Emulsion": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "Foam": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Gas] and [inverseOf srInheresIn some DispersedPhase])] and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some ContinuousMedium])])"
+      ]
+    },
+    "Gel": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some DispersedPhase])] and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some ContinuousMedium])])"
+      ]
+    },
+    "LiquidAerosol": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Gas] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "Sol": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "SolidAerosol": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Gas] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "SolidFoam": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Gas] and [inverseOf srInheresIn some DispersedPhase])] and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some ContinuousMedium])])"
+      ]
+    },
+    "SolidSol": {
+      "subClassOf": [
+        "DispersionColloid"
+      ],
+      "equivalentClass": [
+        "(DispersionColloid and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff exactly 1 (Stuff and [hasState some Solid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "EvenDistribution": {
+      "subClassOf": [
+        "AbstractRegion"
+      ]
+    },
+    "NumberOfPhases": {
+      "subClassOf": [
+        "AbstractRegion"
+      ],
+      "propertyRestrictions": [
+        "[hasDataValue some xsd:nonNegativeInteger]"
+      ]
+    },
+    "UnevenDistribution": {
+      "subClassOf": [
+        "AbstractRegion"
+      ]
+    },
+    "Gas": {
+      "subClassOf": [
+        "StuffState"
+      ]
+    },
+    "Liquid": {
+      "subClassOf": [
+        "StuffState"
+      ]
+    },
+    "Solid": {
+      "subClassOf": [
+        "StuffState"
+      ]
+    },
+    "HeterogeneousMixture": {
+      "subClassOf": [
+        "MixedStuff"
+      ],
+      "disjointWith": [
+        "HomogeneousMixture"
+      ],
+      "propertyRestrictions": [
+        "[hasGranuleType min 2 (Molecule or MultiMoleculeParticle)]",
+        "[hasPartStuff min 2 (MixedStuff or PureStuff)]",
+        "[hasStuffDistribution exactly 1 UnevenDistribution]"
+      ]
+    },
+    "HomogeneousMixture": {
+      "subClassOf": [
+        "MixedStuff"
+      ],
+      "propertyRestrictions": [
+        "[hasGranuleType only (Atom or Ion or Molecule)]",
+        "[hasStuffDistribution exactly 1 EvenDistribution]"
+      ]
+    },
+    "LeastPortion": {
+      "subClassOf": [
+        "Portion",
+        "not [hasPortion some Portion]"
+      ]
+    },
+    "Piece": {
+      "subClassOf": [
+        "Portion"
+      ],
+      "propertyRestrictions": [
+        "[isSelfContainedScatteredPortionOf some AmountOfStuff]"
+      ]
+    },
+    "MicellarColloid": {
+      "subClassOf": [
+        "AssociationalColloid"
+      ]
+    },
+    "Paste": {
+      "subClassOf": [
+        "Suspension"
+      ]
+    },
+    "PhysicalEndurant": {
+      "subClassOf": [
+        "Endurant"
+      ],
+      "disjointWith": [
+        "Role"
+      ],
+      "equivalentClass": [
+        "om-1:Phenomenon"
+      ]
+    },
+    "Role": {
+      "subClassOf": [
+        "Endurant"
+      ]
+    },
+    "Portion": {
+      "subClassOf": [
+        "AmountOfStuff"
+      ],
+      "propertyRestrictions": [
+        "[portionOf some AmountOfStuff]"
+      ]
+    },
+    "PureBulk": {
+      "subClassOf": [
+        "PureStuff"
+      ],
+      "equivalentClass": [
+        "(PureStuff and [hasGranuleType only MultiMoleculeParticle] and [hasGranuleType exactly 1 MultiMoleculeParticle])"
+      ]
+    },
+    "StructuredPureStuff": {
+      "subClassOf": [
+        "PureStuff"
+      ],
+      "disjointWith": [
+        "UnstructuredPureStuff"
+      ],
+      "equivalentClass": [
+        "(PureStuff and [hasGranuleType only Molecule] and [hasGranuleType exactly 1 Molecule])"
+      ]
+    },
+    "UnstructuredPureStuff": {
+      "subClassOf": [
+        "PureStuff"
+      ],
+      "equivalentClass": [
+        "(PureStuff and [hasGranuleType only Atom] and [hasGranuleType exactly 1 Atom])"
+      ]
+    },
+    "Region": {
+      "subClassOf": [
+        "Abstract"
+      ]
+    },
+    "om-1:Unit_of_measure": {
+      "subClassOf": [
+        "Abstract"
+      ]
+    },
+    "SolidHeterogeneousMixture": {
+      "subClassOf": [
+        "HeterogeneousMixture"
+      ],
+      "equivalentClass": [
+        "(HeterogeneousMixture and [hasPartStuff min 2 (Stuff and [hasState some Solid])])"
+      ]
+    },
+    "Suspension": {
+      "subClassOf": [
+        "HeterogeneousMixture",
+        "([hasGranuleType some Molecule] and [hasGranuleType some MultiMoleculeParticle])"
+      ],
+      "equivalentClass": [
+        "(HeterogeneousMixture and [hasPartStuff some (Stuff and [hasState some Liquid] and [inverseOf srInheresIn some ContinuousMedium])] and [hasPartStuff some (Stuff and [hasState some Solid] and [inverseOf srInheresIn some DispersedPhase])])"
+      ]
+    },
+    "State": {
+      "subClassOf": [
+        "Perdurant"
+      ]
+    },
+    "StuffRole": {
+      "subClassOf": [
+        "Role"
+      ],
+      "propertyRestrictions": [
+        "[srInheresIn some Stuff]"
+      ]
+    },
+    "StuffState": {
+      "subClassOf": [
+        "State"
+      ]
+    },
+    "Endurant": {
+      "disjointWith": [
+        "Perdurant"
+      ]
+    }
+  },
+  "properties": {
+    "scatterPortion": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasProperPart"
+      ],
+      "inverseOf": [
+        "scatteredPortionOf"
+      ]
+    },
+    "hasState": {
+      "characteristics": [],
+      "domain": [
+        "PhysicalEndurant"
+      ],
+      "range": [
+        "State"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "inheresIn": {
+      "characteristics": [],
+      "domain": [
+        "Role"
+      ],
+      "range": [
+        "PhysicalEndurant"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "stuffFormingRelation": {
+      "characteristics": [],
+      "domain": [
+        "(ContinuousMedium or DispersedPhase or Solute or Solvent)"
+      ],
+      "range": [
+        "(ContinuousMedium or DispersedPhase or Solute or Solvent)"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "hasSelfContainedScatteredPortion": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "scatterPortion"
+      ],
+      "inverseOf": [
+        "isSelfContainedScatteredPortionOf"
+      ]
+    },
+    "portionOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "properContainedIn": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "hasPartStuff": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasProperPart"
+      ],
+      "inverseOf": [
+        "stuffPartOf"
+      ]
+    },
+    "hasNrOfPhase": {
+      "characteristics": [],
+      "domain": [
+        "Stuff"
+      ],
+      "range": [
+        "xsd:integer"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "hasContainedScatteredPortion": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "scatterPortion"
+      ],
+      "inverseOf": [
+        "isContainedScatteredPortionOf"
+      ]
+    },
+    "isContainedScatteredPortionOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "scatteredPortionOf"
+      ],
+      "inverseOf": []
+    },
+    "srInheresIn": {
+      "characteristics": [],
+      "domain": [
+        "StuffRole"
+      ],
+      "range": [
+        "Stuff"
+      ],
+      "subPropertyOf": [
+        "inheresIn"
+      ],
+      "inverseOf": []
+    },
+    "partOf": {
+      "characteristics": [
+        "Transitive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "solutionFormingRelation": {
+      "characteristics": [],
+      "domain": [
+        "Solvent"
+      ],
+      "range": [
+        "Solute"
+      ],
+      "subPropertyOf": [
+        "stuffFormingRelation"
+      ],
+      "inverseOf": []
+    },
+    "contiguousPortion": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasProperPart"
+      ],
+      "inverseOf": [
+        "isContiguousPortionOf"
+      ]
+    },
+    "colloidFormingRelation": {
+      "characteristics": [],
+      "domain": [
+        "ContinuousMedium"
+      ],
+      "range": [
+        "DispersedPhase"
+      ],
+      "subPropertyOf": [
+        "stuffFormingRelation"
+      ],
+      "inverseOf": []
+    },
+    "properPartOf": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "partOf"
+      ],
+      "inverseOf": []
+    },
+    "instantiation": {
+      "characteristics": [],
+      "domain": [
+        "AmountOfStuff"
+      ],
+      "range": [
+        "Stuff"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "hasStuffDistribution": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "scatteredStuffPartOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "scatteredPortionOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "hasGranuleType": {
+      "characteristics": [],
+      "domain": [
+        "Stuff"
+      ],
+      "range": [
+        "PhysicalObject"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "hasQuality": {
+      "characteristics": [],
+      "domain": [
+        "(Endurant or Perdurant)"
+      ],
+      "range": [
+        "Quality"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "isSelfContainedScatteredPortionOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "scatteredPortionOf"
+      ],
+      "inverseOf": []
+    },
+    "hasDataValue": {
+      "characteristics": [],
+      "domain": [
+        "Abstract"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "stuffPartOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "hasPortion": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasProperPart"
+      ],
+      "inverseOf": [
+        "portionOf"
+      ]
+    },
+    "hasPart": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "partOf"
+      ]
+    },
+    "containedIn": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "partOf"
+      ],
+      "inverseOf": []
+    },
+    "isContiguousPortionOf": {
+      "characteristics": [],
+      "domain": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "range": [
+        "(AmountOfStuff or Stuff)"
+      ],
+      "subPropertyOf": [
+        "properPartOf"
+      ],
+      "inverseOf": []
+    },
+    "hasScatterStuffPart": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasProperPart"
+      ],
+      "inverseOf": [
+        "scatteredStuffPartOf"
+      ]
+    },
+    "hasProperPart": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "hasPart"
+      ],
+      "inverseOf": [
+        "properPartOf"
+      ]
+    },
+    "hasQuale": {
+      "characteristics": [],
+      "domain": [
+        "Quality"
+      ],
+      "range": [
+        "Abstract"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    }
+  }
+}
