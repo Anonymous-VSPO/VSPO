@@ -1,0 +1,3283 @@
+{
+  "classes": {
+    "Phylogenetics": {
+      "subClassOf": [
+        "Sequence analysis",
+        "Phylogeny"
+      ]
+    },
+    "Preclinical and clinical studies": {
+      "subClassOf": [
+        "Medicine research and development"
+      ]
+    },
+    "Nucleic acid features (quadruplexes)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein-ligand docking": {
+      "subClassOf": [
+        "Molecular docking"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Protein interactions]",
+        "[has output some Protein-ligand complex]"
+      ]
+    },
+    "CpG island and isochores": {
+      "subClassOf": [
+        "Gene transcription features"
+      ]
+    },
+    "Logit-t algorithm": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "TAIR accession (protein)": {
+      "subClassOf": [
+        "TAIR accession",
+        "Sequence accession (protein)"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Sequence record]"
+      ]
+    },
+    "MLInterfaces": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some k-nearest neighbour classification]",
+        "[has specified data output some (ALL/AML data set and [has format specification some data format specification])]",
+        "[has specified data input some (Gene expression dataset and [has format specification some data format specification])]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "Ensembl gene ID": {
+      "subClassOf": [
+        "Gene ID",
+        "Ensembl ID"
+      ]
+    },
+    "Amino acid index (White-Wimley data)": {
+      "subClassOf": [
+        "Amino acid index"
+      ]
+    },
+    "Sequence database search (by sequence using global alignment-based methods)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein dipole moment calculation": {
+      "subClassOf": [
+        "Protein property calculation (from sequence)"
+      ],
+      "propertyRestrictions": [
+        "[has output some Protein dipole moment]"
+      ]
+    },
+    "Database search (by sequence)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Microsoft Excel 2007": {
+      "subClassOf": [
+        "Microsoft Excel"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some (data and [has format specification some XML spreadsheet])]",
+        "[has specified data input some (data and [has format specification some tab delimited file format])]",
+        "[has specified data output some (data and [has format specification some XLS spreadsheet])]",
+        "[has release date hasValue ns1:00]",
+        "[has website homepage hasValue http://office.microsoft.com/]",
+        "[directly followed by some Microsoft Excel for Windows 2010]",
+        "[has specified data output some (data and [has format specification some tab delimited file format])]",
+        "[has version hasValue Microsoft 2007 version]",
+        "[has specified data input some (data and [has format specification some XLS spreadsheet])]"
+      ]
+    },
+    "GeneR": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[has specified data input some (Gene list and [has format specification some data format specification])]",
+        "[is encoded in some R language]",
+        "[has specified data input some (data and [has format specification some FASTA])]"
+      ]
+    },
+    "50-50 MANOVA algorithm": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Job identifier": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ]
+    },
+    "JPEG 2000": {
+      "subClassOf": [
+        "raster image format"
+      ]
+    },
+    "DNA transduction map": {
+      "subClassOf": [
+        "Genetic map"
+      ]
+    },
+    "Article comparison": {
+      "subClassOf": [
+        "Comparison"
+      ]
+    },
+    "obsolete_Microarray data": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "HilbertVis": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (data and [has format specification some GFF])]",
+        "[is executed in some data visualization]",
+        "[has specified data output some (Graph plot and [has format specification some image format])]",
+        "[has specified data input some (data and [has format specification some BED])]",
+        "[is encoded in some R language]",
+        "[is executed in some data normalization]"
+      ]
+    },
+    "GeneSelector": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some SAM]",
+        "[implements some BaldiLongT]",
+        "[implements some FoxDimmicT]",
+        "[implements some WilcEbam]",
+        "[implements some Bayesian Model]",
+        "[implements some Wilcoxon]",
+        "[implements some Linear modelling]",
+        "[implements some 't-test']",
+        "[is encoded in some R language]"
+      ]
+    },
+    "Lognormal Normal with Modied Variance Model": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Nucleic acid stitch profile": {
+      "subClassOf": [
+        "Nucleic acid melting profile"
+      ]
+    },
+    "Structure alignment report": {
+      "subClassOf": [
+        "Report"
+      ]
+    },
+    "maCorrPlot": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some Graph plot]",
+        "[is encoded in some R language]",
+        "[has specified data input some [has format specification only (mas5 format or .rma format)]]",
+        "[is published by hasValue Bioconductor]",
+        "[is executed in some (data visualization and background correction and data normalization)]"
+      ]
+    },
+    "predictive modeling task": {
+      "subClassOf": [
+        "data mining task"
+      ]
+    },
+    "Interaction data": {
+      "subClassOf": [
+        "data"
+      ]
+    },
+    "Spectral analysis": {
+      "subClassOf": [
+        "Analysis"
+      ]
+    },
+    "Single particle analysis": {
+      "subClassOf": [
+        "Structure analysis",
+        "Image analysis"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Structural biology]"
+      ]
+    },
+    "ChemSpider entry format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Codon usage": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Plasmid map drawing": {
+      "subClassOf": [
+        "Map drawing"
+      ]
+    },
+    "Pathway ID (ConsensusPathDB)": {
+      "subClassOf": [
+        "Pathway or network accession",
+        "ConsensusPathDB identifier"
+      ]
+    },
+    "CRG Expresso Web Tool": {
+      "subClassOf": [
+        "TCoffee"
+      ],
+      "propertyRestrictions": [
+        "[has documentation hasValue ns6:gkl092]",
+        "[has interface some web user interface]",
+        "[uses software some CRG TCoffee 9.02.r1228]",
+        "[output of some (software publishing process and [has participant hasValue Centre for Genomic Regulation (CRG) of Barcelona])]"
+      ]
+    },
+    "Gene annotation format": {
+      "subClassOf": [
+        "Format (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Gene report]"
+      ]
+    },
+    "Transcriptomics": {
+      "subClassOf": [
+        "Genomics",
+        "Gene expression"
+      ]
+    },
+    "EMBOSS supermatcher error file": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "BioPAX": {
+      "subClassOf": [
+        "Biological pathway or network format"
+      ]
+    },
+    "Sequence database name": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "50-50 MANOVA": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Matforsk])]",
+        "[is encoded in some R language]",
+        "[implements some 50-50 MANOVA algorithm]",
+        "[is encoded in some MATLAB language]"
+      ]
+    },
+    "Trauma medicine": {
+      "subClassOf": [
+        "Medicine"
+      ]
+    },
+    "'beadarraySNP'": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some Graph plot]",
+        "[has specified data input some Text data set]",
+        "[is executed in some data normalization]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "qpgraph": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some descriptive statistical calculation]",
+        "[has specified data output some (Graph plot and [has format specification only R data frame])]",
+        "[has specified data input some Gene expression data]",
+        "[implements some (Pearson correlation estimator and AvgNRRs)]",
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]"
+      ]
+    },
+    "Immunoproteins, genes and antigens": {
+      "subClassOf": [
+        "Protein families",
+        "Immunology"
+      ]
+    },
+    "DTD": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "G protein-coupled receptors (GPCR)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "geneseq": {
+      "subClassOf": [
+        "EMBL-like (text)"
+      ]
+    },
+    "Molecular similarity score": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "MEDME": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[has specified data output some (data and [has format specification some GFF])]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "graphical user interface": {
+      "subClassOf": [
+        "software interface"
+      ]
+    },
+    "AtlasImage": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Clontech Laboratories, Inc])]"
+      ]
+    },
+    "Article report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "GenePix Pro 3": {
+      "subClassOf": [
+        "GenePix Pro"
+      ]
+    },
+    "Lipids": {
+      "subClassOf": [
+        "Biochemistry"
+      ]
+    },
+    "Complex Estimation Algorithm": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Gene features (exonic splicing enhancer)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene expression profile clustering": {
+      "subClassOf": [
+        "Clustering",
+        "Gene expression profile comparison"
+      ],
+      "propertyRestrictions": [
+        "[has output some Processed microarray data]"
+      ]
+    },
+    "Cell biology": {
+      "subClassOf": [
+        "Biology"
+      ]
+    },
+    "Sequence alignment (nucleic acid)": {
+      "subClassOf": [
+        "Sequence alignment"
+      ]
+    },
+    "Sequence length range": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Splice site prediction": {
+      "subClassOf": [
+        "Nucleic acid sequence feature detection"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Gene structure]"
+      ]
+    },
+    "FACS data": {
+      "subClassOf": [
+        "data"
+      ]
+    },
+    "dynamic Bayesian network model": {
+      "subClassOf": [
+        "Bayesian Model"
+      ]
+    },
+    "affypdnn": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (Text data set and [has format specification some R data frame])]",
+        "[is encoded in some R language]",
+        "[has specified data output some Graph plot]",
+        "[is published by hasValue Bioconductor]"
+      ]
+    },
+    "dat": {
+      "subClassOf": [
+        "Textual format",
+        "Gene expression report format"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Microarray spots image]"
+      ]
+    },
+    "Functional enrichment": {
+      "subClassOf": [
+        "Gene expression data analysis",
+        "Enrichment"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Function analysis]"
+      ]
+    },
+    "rsbml": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some (parse and cross validation)]",
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data input some [has format specification only SBML]]",
+        "[has specified data output some [has format specification only XML]]"
+      ]
+    },
+    "Atomic x coordinate": {
+      "subClassOf": [
+        "Atomic coordinate"
+      ]
+    },
+    "Northern blot experiment": {
+      "subClassOf": [
+        "Proteomics experiment"
+      ]
+    },
+    "Ensembl ID ('Danio rerio')": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "System metadata": {
+      "subClassOf": [
+        "Resource metadata"
+      ]
+    },
+    "EMBL accession": {
+      "subClassOf": [
+        "EMBL/GenBank/DDBJ ID"
+      ]
+    },
+    "Gene regulatory network processing": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "dasdna": {
+      "subClassOf": [
+        "XML",
+        "Sequence record format (XML)"
+      ]
+    },
+    "web user interface": {
+      "subClassOf": [
+        "graphical user interface"
+      ]
+    },
+    "Acuity": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Molecular Devices])]"
+      ]
+    },
+    "Data retrieval": {
+      "subClassOf": [
+        "Query and retrieval"
+      ],
+      "propertyRestrictions": [
+        "[has input some Identifier]"
+      ]
+    },
+    "pure dna": {
+      "subClassOf": [
+        "dna",
+        "pure nucleotide"
+      ]
+    },
+    "Raw microarray data": {
+      "subClassOf": [
+        "Experimental measurement",
+        "Microarray hybridisation data"
+      ]
+    },
+    "Nucleic acid features report (expression signal)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "NONMEM data format": {
+      "subClassOf": [
+        "data format specification"
+      ]
+    },
+    "CAF": {
+      "subClassOf": [
+        "Textual format",
+        "Sequence assembly format (text)"
+      ]
+    },
+    "Protein structure raw data": {
+      "subClassOf": [
+        "Experimental measurement"
+      ]
+    },
+    "ASCII format": {
+      "subClassOf": [
+        "plain text file format"
+      ]
+    },
+    "Phylogenetic tree generation (from gene frequencies)": {
+      "subClassOf": [
+        "Phylogenetic tree generation (data centric)"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Gene expression]",
+        "[has input some Phylogenetic gene frequencies data]"
+      ]
+    },
+    "Protein structure prediction": {
+      "subClassOf": [
+        "Protein analysis",
+        "Prediction and recognition (protein)",
+        "Protein sequence analysis",
+        "Structure prediction",
+        "Protein structure analysis",
+        "Structure prediction"
+      ],
+      "propertyRestrictions": [
+        "[has output some Protein structure]",
+        "[has topic some Protein structure prediction]"
+      ]
+    },
+    "Dotplot plotting": {
+      "subClassOf": [
+        "Plotting",
+        "Sequence word comparison",
+        "Sequence alignment visualisation"
+      ],
+      "propertyRestrictions": [
+        "[has output some Dotplot]"
+      ]
+    },
+    "Obsolete": {
+      "subClassOf": [
+        "Development status"
+      ],
+      "disjointWith": [
+        "Maintained"
+      ]
+    },
+    "Protein interaction network comparison": {
+      "subClassOf": [
+        "Protein interaction network analysis",
+        "Protein function comparison"
+      ]
+    },
+    "Phylogeny": {
+      "subClassOf": [
+        "Evolutionary biology"
+      ]
+    },
+    "Sequence signature recognition": {
+      "subClassOf": [
+        "Sequence feature detection"
+      ],
+      "propertyRestrictions": [
+        "[has output some Sequence signature matches]",
+        "[has topic some Sequence sites, features and motifs]"
+      ]
+    },
+    "quantsmooth": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[is executed in some data visualization]",
+        "[has specified data input some (ILLUMINA data or Gene expression dataset)]",
+        "[has specified data output some Graph plot]"
+      ]
+    },
+    "timecourse": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some RMA]",
+        "[is published by hasValue Bioconductor]",
+        "[is encoded in some R language]",
+        "[has specified data input some Gene expression dataset]",
+        "[has specified data output some [has format specification only CEL binary format]]"
+      ]
+    },
+    "Protein family report": {
+      "subClassOf": [
+        "Protein report"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Protein families]"
+      ]
+    },
+    "Smultron": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some text editing]",
+        "[has version hasValue 3.5.1]",
+        "[has specified data input some (Ontology and [has format specification some Textual format])]",
+        "[has declared status some Latest release]",
+        "[has website homepage hasValue http://www.peterborgapps.com/smultron/]"
+      ]
+    },
+    "sizepower": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some (background correction and data normalization and differential expression analysis)]",
+        "[has specified data output some [has format specification only R data frame]]",
+        "[has specified data input some [has format specification only R data frame]]",
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]"
+      ]
+    },
+    "CDF binary format": {
+      "subClassOf": [
+        "Binary format"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Affymetrix]"
+      ]
+    },
+    "database creation": {
+      "subClassOf": [
+        "information processing"
+      ]
+    },
+    "Amino acid name (single letter)": {
+      "subClassOf": [
+        "Amino acid name"
+      ]
+    },
+    "derivative software not allowed": {
+      "subClassOf": [
+        "Derivatives clause"
+      ],
+      "disjointWith": [
+        "derivative software allowed"
+      ]
+    },
+    "BAI": {
+      "subClassOf": [
+        "Data index format"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Data index]"
+      ]
+    },
+    "raster image format": {
+      "subClassOf": [
+        "image format"
+      ]
+    },
+    "Sequence alignment type": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein sequence alignment analysis": {
+      "subClassOf": [
+        "Protein analysis",
+        "Prediction and recognition (protein)",
+        "Sequence alignment analysis"
+      ],
+      "propertyRestrictions": [
+        "[has input some Sequence alignment (protein)]"
+      ]
+    },
+    "Ontology format": {
+      "subClassOf": [
+        "Format (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Ontology]"
+      ]
+    },
+    "Ensembl ID (Homo sapiens)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "GO (molecular function)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "logitT": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some (Logit-t algorithm and 't-test')]",
+        "[is executed in some differential expression analysis]",
+        "[has specified data input some [has format specification only (CEL binary format or CEL ASCII format)]]",
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data output some [has format specification only R data frame]]"
+      ]
+    },
+    "Sequence Alignment and Modeling System": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some multiple sequence alignment]"
+      ]
+    },
+    "Gene ID (ZFIN)": {
+      "subClassOf": [
+        "Gene ID"
+      ]
+    },
+    "Endnote": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has interface some graphical user interface]",
+        "[has license some Proprietary commercial software license]",
+        "[has declared status some Live]",
+        "[has website homepage hasValue http://www.endnote.com/]",
+        "[is executed in some citation management]",
+        "[output of some (software publishing process and [has participant hasValue Thompson Reuters])]"
+      ]
+    },
+    "MPL v2.0": {
+      "subClassOf": [
+        "MPL"
+      ],
+      "propertyRestrictions": [
+        "[is compatible license of some GNU GPL v2]",
+        "[is compatible license of some GNU GPL v3]"
+      ]
+    },
+    "Sequence assembly format (text)": {
+      "subClassOf": [
+        "Sequence assembly format"
+      ]
+    },
+    "2D PAGE experiment": {
+      "subClassOf": [
+        "Proteomics experiment"
+      ]
+    },
+    "Genome index": {
+      "subClassOf": [
+        "Data index"
+      ]
+    },
+    "Database cross-mapping": {
+      "subClassOf": [
+        "Data reference"
+      ]
+    },
+    "PubChem bioassay ID": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "PubChem ID"
+      ]
+    },
+    "Alignment processing": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "BAR": {
+      "subClassOf": [
+        "Binary format"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Affymetrix]"
+      ]
+    },
+    "Sequence alignment parameter": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Recombination detection": {
+      "subClassOf": [
+        "Nucleic acid sequence alignment analysis"
+      ]
+    },
+    "Motif database search": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Residue bump detection": {
+      "subClassOf": [
+        "Residue non-canonical interaction detection"
+      ]
+    },
+    "STRIDE log file": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Laboratory techniques": {
+      "subClassOf": [
+        "Topic"
+      ]
+    },
+    "Protein-protein interaction prediction": {
+      "subClassOf": [
+        "Protein interaction prediction"
+      ],
+      "propertyRestrictions": [
+        "[has output some Protein interaction report]",
+        "[has topic some Protein interactions]"
+      ]
+    },
+    "LabVIEW": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "Surface rendering": {
+      "subClassOf": [
+        "Structure visualisation",
+        "Protein surface calculation"
+      ]
+    },
+    "Atom ID": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ]
+    },
+    "Sequence alignment (hybrid)": {
+      "subClassOf": [
+        "Sequence alignment"
+      ]
+    },
+    "DictyBase gene report format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence-profile alignment (HMM) format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "MPL": {
+      "subClassOf": [
+        "software license"
+      ],
+      "propertyRestrictions": [
+        "[has clause some Source code available]",
+        "[has clause some Distribution with notices]"
+      ]
+    },
+    "Sequence editing (nucleic acid)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "BIND entry format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Multivariate correlation estimator": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "affyPara": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Bioconductor]",
+        "[is executed in some (averaging and correction and data normalization)]",
+        "[has specified data input some [has format specification only (CEL binary format or CEL ASCII format)]]",
+        "[has specified data output some (Graph plot and [has format specification some R data frame])]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "Structural (3D) profile ID": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "Accession"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Structural profile]"
+      ]
+    },
+    "Text mining": {
+      "subClassOf": [
+        "Analysis"
+      ],
+      "propertyRestrictions": [
+        "[has input some Report]",
+        "[has topic some Data mining]",
+        "[has output some Text mining report]"
+      ]
+    },
+    "vsn": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[has specified data input some Gene expression dataset]",
+        "[is executed in some (correction and data normalization and differential expression analysis)]"
+      ]
+    },
+    "Genes and proteins resources": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Cysteine bridge detection": {
+      "subClassOf": [
+        "Protein cysteine and disulfide bond assignment"
+      ]
+    },
+    "Peptide annotation": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene name (MaizeGDB)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "markx0": {
+      "subClassOf": [
+        "markx0 variant"
+      ]
+    },
+    "FreeBSD": {
+      "subClassOf": [
+        "software license"
+      ],
+      "propertyRestrictions": [
+        "[is compatible license of some GNU GPL v2]",
+        "[has clause some Source code available]",
+        "[has clause some Distribution with notices]",
+        "[has clause some derivative software allowed]",
+        "[is compatible license of some GNU GPL v3]"
+      ]
+    },
+    "EMBOSS database resource definition": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "SAGx": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some (Linear modelling and 't-test')]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data input some (Graph plot and [has format specification only R data frame])]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "Protein targeting and localization": {
+      "subClassOf": [
+        "Protein expression"
+      ]
+    },
+    "Secondary structure comparison": {
+      "subClassOf": [
+        "Comparison"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Structure comparison]"
+      ]
+    },
+    "Splice transcript prediction": {
+      "subClassOf": [
+        "Splicing model analysis"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Gene structure]"
+      ]
+    },
+    "phyloXML": {
+      "subClassOf": [
+        "XML",
+        "Phylogenetic tree format (XML)"
+      ]
+    },
+    "Sequence trace format": {
+      "subClassOf": [
+        "Sequence record format"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Sequence trace]"
+      ]
+    },
+    "mspcrunch": {
+      "subClassOf": [
+        "Textual format",
+        "Database hits (sequence) format"
+      ]
+    },
+    "Microarray raw data analysis": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Dylan": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "Usage restricted": {
+      "subClassOf": [
+        "Usage clause"
+      ]
+    },
+    "Metabolic disease": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "application programming interface": {
+      "subClassOf": [
+        "software interface"
+      ]
+    },
+    "Phylogenetic tree generation (minimum distance methods)": {
+      "subClassOf": [
+        "Phylogenetic tree generation (method centric)"
+      ]
+    },
+    "matlab software": {
+      "subClassOf": [
+        "software"
+      ],
+      "equivalentClass": [
+        "[is encoded in some MATLAB language]"
+      ]
+    },
+    "Protein residue surface calculation": {
+      "subClassOf": [
+        "Protein surface and interior calculation"
+      ]
+    },
+    "Protein signal peptide detection (eukaryotes)": {
+      "subClassOf": [
+        "Protein signal peptide detection"
+      ]
+    },
+    "Query and retrieval": {
+      "subClassOf": [
+        "information processing"
+      ],
+      "propertyRestrictions": [
+        "[has output some data]",
+        "[has topic some Data search, query and retrieval]"
+      ]
+    },
+    "Epitope mapping": {
+      "subClassOf": [
+        "Mapping",
+        "Protein sequence feature detection"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Immunology]"
+      ]
+    },
+    "Coding region prediction": {
+      "subClassOf": [
+        "Gene component prediction"
+      ]
+    },
+    "Protein secondary structure image": {
+      "subClassOf": [
+        "Protein image"
+      ]
+    },
+    "Sequence cluster ID (UniRef90)": {
+      "subClassOf": [
+        "Sequence cluster ID (UniRef)"
+      ]
+    },
+    "REBASE proto enzyme report format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "LBE": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[has specified data output some (Graph plot and [has format specification some image format])]",
+        "[implements some 'FDR']",
+        "[has specified data output some (data and [has format specification some R data frame])]",
+        "[is executed in some differential expression analysis]",
+        "[has specified data input some (Gene expression dataset and [has format specification some data format specification])]"
+      ]
+    },
+    "Sequence word comparison": {
+      "subClassOf": [
+        "Sequence comparison"
+      ]
+    },
+    "amino acid protein sequence data": {
+      "subClassOf": [
+        "biological sequence data"
+      ]
+    },
+    "RBioinf": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some (Image and [has format specification some image format])]",
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[is encoded in some R language]",
+        "[implements some Linear modelling]"
+      ]
+    },
+    "Algorithms for Calculating Microarray Enrichment": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some Graph plot]",
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[is encoded in some R language]",
+        "[implements some (Algorithms for Calculating Microarray Enrichment and Chi-square)]"
+      ]
+    },
+    "Ontology concept comment": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence redundancy removal": {
+      "subClassOf": [
+        "Sequence comparison"
+      ],
+      "propertyRestrictions": [
+        "[has output some Sequence]"
+      ]
+    },
+    "Image": {
+      "subClassOf": [
+        "data"
+      ]
+    },
+    "Free cysteine detection": {
+      "subClassOf": [
+        "Protein cysteine and disulfide bond assignment"
+      ]
+    },
+    "NMR spectrum": {
+      "subClassOf": [
+        "Spectrum"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Structural biology]"
+      ]
+    },
+    "dhf": {
+      "subClassOf": [
+        "Textual format",
+        "Database hits (sequence) format"
+      ]
+    },
+    "Cell type name": {
+      "subClassOf": [
+        "Name",
+        "Cell type identifier"
+      ]
+    },
+    "HGVbase entry format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "GO concept name": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "affyTiling": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Bioconductor]",
+        "[is executed in some (correction and data normalization)]",
+        "[has specified data output some CSV data set]",
+        "[implements some RMA]",
+        "[is encoded in some R language]",
+        "[has specified data input some [has format specification only (BPMAP and CEL binary format)]]"
+      ]
+    },
+    "Map": {
+      "subClassOf": [
+        "data"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Mapping]"
+      ]
+    },
+    "TreeBASE format": {
+      "subClassOf": [
+        "Textual format",
+        "Phylogenetic tree format (text)"
+      ]
+    },
+    "RLMM": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some Mahalanobis distance]",
+        "[has specified data input some [has format specification only (Xba.CQV and Xba.regions and .raw files)]]",
+        "[has specified data output some Graph plot]",
+        "[is encoded in some R language]",
+        "[is executed in some data normalization]",
+        "[is published by hasValue Bioconductor]"
+      ]
+    },
+    "Sequence feature detection": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)",
+        "Sequence analysis",
+        "Prediction and recognition"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Sequence sites, features and motifs]",
+        "[has output some Sequence features]"
+      ]
+    },
+    "Directory metadata": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Nucleic acid comparison": {
+      "subClassOf": [
+        "Comparison"
+      ]
+    },
+    "beta": {
+      "subClassOf": [
+        "Development status"
+      ]
+    },
+    "Rank-invariant set normalization": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "CBS": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Perl": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "Functional mapping": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "OmniOutliner": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software development process and [has participant hasValue Omni])]",
+        "[is executed in some document outlining]",
+        "[output of some (software publishing process and [has participant hasValue Omni])]",
+        "[has website homepage hasValue http://www.omnigroup.com/products/omnioutliner/]",
+        "[has license some Proprietary commercial software license]",
+        "[has specified data output some (data and [has format specification some OmniOutline format])]"
+      ]
+    },
+    "Ecology": {
+      "subClassOf": [
+        "Biology"
+      ]
+    },
+    "Shell": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "Phylogenetic tree analysis (shape)": {
+      "subClassOf": [
+        "Phylogenetic tree analysis"
+      ]
+    },
+    "Restriction map": {
+      "subClassOf": [
+        "Sequence map",
+        "Sequence image"
+      ]
+    },
+    "Gene ID (SGD)": {
+      "subClassOf": [
+        "Gene ID",
+        "SGD ID"
+      ]
+    },
+    "data processing task": {
+      "subClassOf": [
+        "information processing"
+      ]
+    },
+    "Structure-based sequence alignment": {
+      "subClassOf": [
+        "Sequence alignment generation"
+      ]
+    },
+    "Organism name": {
+      "subClassOf": [
+        "Name",
+        "Organism identifier"
+      ]
+    },
+    "UMLS": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Transcriptome assembly (de novo)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Structure formatting": {
+      "subClassOf": [
+        "Formatting"
+      ]
+    },
+    "phylip sequence format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Helical wheel": {
+      "subClassOf": [
+        "Protein secondary structure image"
+      ]
+    },
+    "Gene ID (VBASE2)": {
+      "subClassOf": [
+        "Gene ID"
+      ]
+    },
+    "Sequence alignment (pair)": {
+      "subClassOf": [
+        "Sequence alignment"
+      ]
+    },
+    "MUSCLE 3.8.31": {
+      "subClassOf": [
+        "Drive5 MUSCLE"
+      ],
+      "propertyRestrictions": [
+        "[has download location hasValue ns5:downloads.htm]",
+        "[has interface some command-line interface]",
+        "[has documentation hasValue ns5:muscle_userguide3.8.html]",
+        "[has version hasValue MUSCLE version 3.8.31]",
+        "[has documentation hasValue ns6:gkh340]"
+      ]
+    },
+    "Taverna workflow format": {
+      "subClassOf": [
+        "XML",
+        "Workflow format"
+      ]
+    },
+    "Medline Display Format": {
+      "subClassOf": [
+        "Textual format",
+        "Bibliographic reference format"
+      ]
+    },
+    "GenomeGraphs": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (Gene expression dataset and [has format specification some data format specification])]",
+        "[is encoded in some R language]",
+        "[has specified data output some (Graph plot and [has format specification some image format])]"
+      ]
+    },
+    "Phylogenetic tree reconstruction": {
+      "subClassOf": [
+        "Phylogenetic tree generation"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Phylogeny]"
+      ]
+    },
+    "Gramene identifier": {
+      "subClassOf": [
+        "Sequence accession (protein)"
+      ]
+    },
+    "Sequence submission": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "limmaGUI": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some (Text data set and [has format specification only TIFF])]",
+        "[implements some Linear modelling]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data input some Text data set]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "Backbone torsion angle calculation": {
+      "subClassOf": [
+        "Torsion angle calculation"
+      ]
+    },
+    "Codon usage table ID": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Genetic code]",
+        "[is identifier of some Codon usage table]"
+      ]
+    },
+    "Nucleic acid sequences": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "probability distribution estimation algorithm": {
+      "subClassOf": [
+        "single generalization algorithm"
+      ]
+    },
+    "Pathway or network identifier": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Pathway or network]"
+      ]
+    },
+    "Ontology concept reference": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein domain classification format": {
+      "subClassOf": [
+        "Format (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Protein family report]"
+      ]
+    },
+    "Small molecule data": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene ID (GeneDB Trypanosoma brucei)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Chemical formula": {
+      "subClassOf": [
+        "Molecular property (general)"
+      ]
+    },
+    "vbmp": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some cross validation]",
+        "[has specified data input some [has format specification only R data frame]]",
+        "[has specified data output some (Graph plot and [has format specification only R data frame])]",
+        "[is published by hasValue Bioconductor]",
+        "[is encoded in some R language]",
+        "[implements some Multinomial probit regression with Gaussian Process priors]"
+      ]
+    },
+    "Database search": {
+      "subClassOf": [
+        "Query and retrieval"
+      ],
+      "propertyRestrictions": [
+        "[has output some Database search results]"
+      ]
+    },
+    "Gene ID (GeneDB Glossina morsitans)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "UniProt format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Virulence prediction": {
+      "subClassOf": [
+        "Sequence analysis",
+        "Prediction and recognition"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Microbiology]"
+      ]
+    },
+    "Structure prediction": {
+      "subClassOf": [
+        "Prediction and recognition",
+        "Structure analysis",
+        "Structure analysis"
+      ],
+      "propertyRestrictions": [
+        "[has output some Structure]",
+        "[has topic some Structure prediction]"
+      ]
+    },
+    "Protein surface report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "aaindex": {
+      "subClassOf": [
+        "Textual format",
+        "Amino acid index format"
+      ]
+    },
+    "bigWig": {
+      "subClassOf": [
+        "Binary format",
+        "Sequence annotation track format"
+      ]
+    },
+    "Data analysis": {
+      "subClassOf": [
+        "Data management"
+      ]
+    },
+    "Database": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "clustering algorithm": {
+      "subClassOf": [
+        "single generalization algorithm"
+      ]
+    },
+    "Pathway or network processing": {
+      "subClassOf": [
+        "Operation (typed)"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Molecular interactions, pathways and networks]"
+      ]
+    },
+    "CMA": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Affymetrix-compliant data": {
+      "subClassOf": [
+        "data"
+      ],
+      "equivalentClass": [
+        "[has format specification some (data format specification and [is published by hasValue Affymetrix])]"
+      ]
+    },
+    "INOH entry format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "CDF ASCII format": {
+      "subClassOf": [
+        "ASCII format"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Affymetrix]"
+      ]
+    },
+    "Book ID": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "Accession"
+      ]
+    },
+    "sequence alignment": {
+      "subClassOf": [
+        "pattern discovery task"
+      ]
+    },
+    "RDF format": {
+      "subClassOf": [
+        "XML",
+        "Ontology format"
+      ]
+    },
+    "MRI": {
+      "subClassOf": [
+        "Imaging"
+      ]
+    },
+    "Ensembl ID ('Bos taurus')": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "2bit": {
+      "subClassOf": [
+        "Raw sequence format",
+        "Binary format"
+      ]
+    },
+    "1 or more": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene ID (GeneDB Plasmodium falciparum)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein disordered structure": {
+      "subClassOf": [
+        "Protein sites, features and motifs"
+      ]
+    },
+    "Position frequency matrix": {
+      "subClassOf": [
+        "Position-specific scoring matrix"
+      ]
+    },
+    "Transcription factor accession": {
+      "subClassOf": [
+        "Accession",
+        "Protein accession",
+        "Transcription factor identifier"
+      ]
+    },
+    "Agilent Feature Extraction software version 7.5": {
+      "subClassOf": [
+        "Agilent Feature Extraction Software"
+      ]
+    },
+    "Structural variation": {
+      "subClassOf": [
+        "Genetic variation",
+        "Chromosomes"
+      ]
+    },
+    "Error": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Repeat sequence organisation analysis": {
+      "subClassOf": [
+        "Sequence composition calculation",
+        "Repeat sequence analysis"
+      ]
+    },
+    "Annotation retrieval": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "GeneData Expressionist Analyst v4.0.5": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Genedata])]"
+      ]
+    },
+    "Diffraction data reduction": {
+      "subClassOf": [
+        "Diffraction data analysis"
+      ]
+    },
+    "lma": {
+      "subClassOf": [
+        "Binary format"
+      ]
+    },
+    "Genome identifier": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ]
+    },
+    "REST service": {
+      "subClassOf": [
+        "web service"
+      ]
+    },
+    "Protein property calculation": {
+      "subClassOf": [
+        "Calculation",
+        "Protein analysis",
+        "Prediction and recognition (protein)"
+      ],
+      "propertyRestrictions": [
+        "[has output some Protein property]",
+        "[has topic some Protein properties]"
+      ]
+    },
+    "EMBOSS graph": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "MVCClass": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some (data and [has format specification some R data frame])]",
+        "[is executed in some data visualization]",
+        "[is encoded in some R language]",
+        "[has specified data input some (data and [has format specification some R data frame])]"
+      ]
+    },
+    "Stock number": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "Accession"
+      ]
+    },
+    "Protein features report (membrane regions)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "RNAi report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence retrieval": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Ligand identifier": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Pfam clan ID": {
+      "subClassOf": [
+        "Protein family accession"
+      ]
+    },
+    "DragonDB author identifier": {
+      "subClassOf": [
+        "Author ID"
+      ]
+    },
+    "Enzyme kinetics data": {
+      "subClassOf": [
+        "Protein property",
+        "Reaction data"
+      ]
+    },
+    "Sequence similarity search": {
+      "subClassOf": [
+        "Sequence comparison",
+        "Database search"
+      ]
+    },
+    "GenePix": {
+      "subClassOf": [
+        "Gene Pix"
+      ]
+    },
+    "Carbohydrates": {
+      "subClassOf": [
+        "Biochemistry"
+      ]
+    },
+    "Gene features (SECIS element)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Disease ID": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "Accession"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Disease report]"
+      ]
+    },
+    "RFAM accession": {
+      "subClassOf": [
+        "Accession",
+        "RNA family identifier"
+      ]
+    },
+    "Protein folding report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Immunology": {
+      "subClassOf": [
+        "Biomedical science"
+      ]
+    },
+    "DiProDB ID": {
+      "subClassOf": [
+        "Oligonucleotide ID"
+      ]
+    },
+    "Wilcoxon": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "LMGene": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[has specified data input some (Gene expression dataset and [has format specification some data format specification])]",
+        "[is executed in some data normalization]",
+        "[implements some Linear modelling]",
+        "[is executed in some Linear modelling]",
+        "[has specified data output some (data and [has format specification some R data frame])]"
+      ]
+    },
+    "Neurobiology": {
+      "subClassOf": [
+        "Biomedical science"
+      ]
+    },
+    "Gene name": {
+      "subClassOf": [
+        "Name",
+        "Gene identifier"
+      ]
+    },
+    "Pascal": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "GPCR coupling selectivity prediction": {
+      "subClassOf": [
+        "Protein interaction prediction",
+        "Protein property calculation (from sequence)",
+        "GPCR analysis"
+      ],
+      "propertyRestrictions": [
+        "[has output some Protein report]"
+      ]
+    },
+    "Sequence cutting": {
+      "subClassOf": [
+        "Sequence editing"
+      ]
+    },
+    "Physicochemical property data processing": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence motif format": {
+      "subClassOf": [
+        "Format (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Sequence motif]"
+      ]
+    },
+    "metahdep": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some Bayesian Model]",
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data output some (Graph plot and [has format specification only R data frame])]",
+        "[has specified data input some Gene expression dataset]"
+      ]
+    },
+    "GenePix Pro [Axon Instruments]": {
+      "subClassOf": [
+        "GenePix Pro"
+      ]
+    },
+    "Locus ID (MMP)": {
+      "subClassOf": [
+        "Locus ID"
+      ]
+    },
+    "Scanning software G2565AA version A6.3.1": {
+      "subClassOf": [
+        "scanning software"
+      ],
+      "propertyRestrictions": [
+        "[is developed by hasValue Agilent Technologies]"
+      ]
+    },
+    "Reaction ID (SABIO-RK)": {
+      "subClassOf": [
+        "Reaction ID"
+      ]
+    },
+    "RNA secondary structure visualisation": {
+      "subClassOf": [
+        "RNA secondary structure analysis",
+        "Visualisation"
+      ],
+      "propertyRestrictions": [
+        "[has input some RNA secondary structure]"
+      ]
+    },
+    "xls": {
+      "subClassOf": [
+        "XML",
+        "Document format"
+      ]
+    },
+    "InChI": {
+      "subClassOf": [
+        "Chemical formula format",
+        "Textual format"
+      ]
+    },
+    "Phylip character frequencies format": {
+      "subClassOf": [
+        "Textual format",
+        "Phylogenetic continuous quantitative character format"
+      ]
+    },
+    "Sequence alignment ID": {
+      "subClassOf": [
+        "Identifier (typed)",
+        "Accession"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Sequence alignment]"
+      ]
+    },
+    "outline document format": {
+      "subClassOf": [
+        "data format specification"
+      ]
+    },
+    "Local-pooled-error": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Gene ID (JCVI)": {
+      "subClassOf": [
+        "Gene ID"
+      ]
+    },
+    "Nucleic acid property": {
+      "subClassOf": [
+        "Molecular property"
+      ]
+    },
+    "Secondary structure processing": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Affymetrix probe sets library file": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Reference map name (SWISS-2DPAGE)": {
+      "subClassOf": [
+        "Name",
+        "Gel ID"
+      ]
+    },
+    "NCBI taxonomy ID": {
+      "subClassOf": [
+        "Ontology concept ID",
+        "Organism accession"
+      ]
+    },
+    "Sequence-profile alignment (Domainatrix signature)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Primer3 internal oligo mishybridizing library": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Calculation": {
+      "subClassOf": [
+        "Analysis"
+      ]
+    },
+    "genomeIntervals": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some descriptive statistical calculation]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data output some [has format specification only R data frame]]",
+        "[is encoded in some R language]",
+        "[has specified data input some [has format specification only (GFF and R data frame)]]"
+      ]
+    },
+    "Python 2.6": {
+      "subClassOf": [
+        "Python"
+      ],
+      "propertyRestrictions": [
+        "[has version hasValue Python version 2.6]"
+      ]
+    },
+    "Quadruplex formation site detection": {
+      "subClassOf": [
+        "Nucleic acid sequence feature detection"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Nucleic acid structure prediction]",
+        "[has output some Nucleic acid structure report]"
+      ]
+    },
+    "MIRIAM data type name": {
+      "subClassOf": [
+        "Data resource definition name"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Database metadata]"
+      ]
+    },
+    "cghMCR": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is published by hasValue Bioconductor]",
+        "[is executed in some data normalization]",
+        "[has specified data output some (Graph plot and [has format specification only R data frame])]",
+        "[is encoded in some R language]",
+        "[implements some MCR algorithm]",
+        "[has specified data input some [has format specification only R data frame]]"
+      ]
+    },
+    "ChipReader 3.1": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Bio-Rad Laboratories, Inc.])]"
+      ]
+    },
+    "Strain data format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Distribution clause": {
+      "subClassOf": [
+        "license clause"
+      ]
+    },
+    "DNDC": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has interface some graphical user interface]",
+        "[has website homepage hasValue ns15:dndc.html]",
+        "[has specified data input some (data and [has format specification some tab delimited file format])]",
+        "[output of some (software development process and [has participant hasValue University of New Hampshire])]",
+        "[has interface some command-line interface]",
+        "[is executed in some modelling]",
+        "[has website homepage hasValue http://www.dndc.sr.unh.edu/]"
+      ]
+    },
+    "Protein sites and features": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene ID (MIPS Maize)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Ensembl ID ('Monodelphis domestica')": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Feature Extraction Software": {
+      "subClassOf": [
+        "Affymetrix GeneChip Operating Software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some feature extraction]"
+      ]
+    },
+    "Phylogenetic tree distances calculation": {
+      "subClassOf": [
+        "Phylogenetic tree comparison"
+      ],
+      "propertyRestrictions": [
+        "[has output some Phylogenetic tree distances]"
+      ]
+    },
+    "Free": {
+      "subClassOf": [
+        "Purchase cost"
+      ]
+    },
+    "Alignment format (XML)": {
+      "subClassOf": [
+        "Alignment format"
+      ]
+    },
+    "Proteolytic digest": {
+      "subClassOf": [
+        "Sequence set (protein)"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Proteomics]"
+      ]
+    },
+    "Virus annotation (taxonomy)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Databank": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Mass spectrometry experiment": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence composition calculation (nucleic acid)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "RefSeq accession": {
+      "subClassOf": [
+        "Sequence accession (hybrid)"
+      ]
+    },
+    "Secondary structure alignment": {
+      "subClassOf": [
+        "Alignment"
+      ]
+    },
+    "Agilent Technologies Software": {
+      "subClassOf": [
+        "software"
+      ],
+      "equivalentClass": [
+        "[output of some (software publishing process and [has participant hasValue Agilent Technologies])]"
+      ]
+    },
+    "GIF": {
+      "subClassOf": [
+        "Binary format",
+        "raster image format"
+      ]
+    },
+    "Genotype and phenotype data": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Phylogenetic tree generation (from molecular sequences)": {
+      "subClassOf": [
+        "Sequence analysis",
+        "Phylogenetic tree generation (data centric)"
+      ]
+    },
+    "Sequence type": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "usage non commercial only": {
+      "subClassOf": [
+        "Usage restricted"
+      ]
+    },
+    "DNA translation": {
+      "subClassOf": [
+        "Sequence conversion"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Protein expression]"
+      ]
+    },
+    "NCBI gene report format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Cardiology": {
+      "subClassOf": [
+        "Medicine"
+      ]
+    },
+    "TIGRFam entry format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Systems medicine": {
+      "subClassOf": [
+        "Medicine"
+      ]
+    },
+    "Genetic code identifier": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is identifier of some Genetic code]"
+      ]
+    },
+    "Gene name (ASPGD)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "GeneticsDesign": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data output some (Text data set and [has format specification some Textual format])]",
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[is encoded in some R language]"
+      ]
+    },
+    "File format name": {
+      "subClassOf": [
+        "Name",
+        "Format identifier"
+      ]
+    },
+    "averaging": {
+      "subClassOf": [
+        "information processing"
+      ]
+    },
+    "Protein folding, stability and design": {
+      "subClassOf": [
+        "Protein structure analysis"
+      ]
+    },
+    "Microbiology": {
+      "subClassOf": [
+        "Biomedical science"
+      ]
+    },
+    "Amino acid index (hydropathy)": {
+      "subClassOf": [
+        "Amino acid index"
+      ]
+    },
+    "Phylogenetic tree generation (maximum likelihood and Bayesian methods)": {
+      "subClassOf": [
+        "Phylogenetic tree generation (method centric)"
+      ]
+    },
+    "Prediction and recognition (protein)": {
+      "subClassOf": [
+        "Prediction and recognition"
+      ]
+    },
+    "unambiguous sequence": {
+      "subClassOf": [
+        "Textual format",
+        "Raw sequence format"
+      ]
+    },
+    "Secondary structure alignment generation": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "ILLUMINA data": {
+      "subClassOf": [
+        "data"
+      ]
+    },
+    "Gap opening penalty": {
+      "subClassOf": [
+        "Gap penalty"
+      ]
+    },
+    "Amino acid identifier format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "MHC Class II epitopes report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Amino acid index (van der Waals radii)": {
+      "subClassOf": [
+        "Amino acid index"
+      ]
+    },
+    "Sequence assembly report": {
+      "subClassOf": [
+        "Sequence alignment report"
+      ]
+    },
+    "Nucleic acid features report (microsatellite)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "EPS": {
+      "subClassOf": [
+        "Textual format"
+      ]
+    },
+    "ChipSkipper": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue EMBL])]"
+      ]
+    },
+    "codata": {
+      "subClassOf": [
+        "Textual format",
+        "Sequence record format (text)"
+      ]
+    },
+    "Protein binding site prediction (from structure)": {
+      "subClassOf": [
+        "Protein structural motif recognition",
+        "Protein binding site prediction"
+      ]
+    },
+    "iHOP symbol": {
+      "subClassOf": [
+        "Gene ID",
+        "Identifier (hybrid)",
+        "Protein accession"
+      ]
+    },
+    "Date": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Ensembl ID ('Gasterosteus aculeatus')": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein interaction networks": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)",
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Viruses": {
+      "subClassOf": [
+        "Organisms"
+      ]
+    },
+    "Sequence alignment validation": {
+      "subClassOf": [
+        "Sequence alignment analysis",
+        "Validation"
+      ]
+    },
+    "Gene ID (HGNC)": {
+      "subClassOf": [
+        "Gene ID"
+      ]
+    },
+    "Ramachandran plot validation": {
+      "subClassOf": [
+        "Dihedral angle validation"
+      ],
+      "propertyRestrictions": [
+        "[has input some Ramachandran plot]",
+        "[has output some Protein structural quality report]"
+      ]
+    },
+    "Tool identifier": {
+      "subClassOf": [
+        "Identifier (typed)"
+      ]
+    },
+    "HMMER3": {
+      "subClassOf": [
+        "HMMER format"
+      ]
+    },
+    "Misspelling": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "NCBI locus tag": {
+      "subClassOf": [
+        "Locus ID"
+      ]
+    },
+    "unambiguous pure rna sequence": {
+      "subClassOf": [
+        "unambiguous pure",
+        "rna"
+      ]
+    },
+    "RMA++": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "process": {
+      "disjointWith": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "TAIR accession": {
+      "subClassOf": [
+        "Accession",
+        "Identifier (hybrid)"
+      ]
+    },
+    "Gene regulatory network report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Ensembl": {
+      "subClassOf": [
+        "software"
+      ]
+    },
+    "HMMER profile alignment (sequences versus HMMs)": {
+      "subClassOf": [
+        "Textual format",
+        "Sequence-profile alignment format"
+      ]
+    },
+    "spML": {
+      "subClassOf": [
+        "XML",
+        "Experiment annotation format"
+      ]
+    },
+    "Enzyme ID (BioCyc)": {
+      "subClassOf": [
+        "Enzyme ID",
+        "BioCyc ID"
+      ]
+    },
+    "BasReader 3.01": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[output of some (software publishing process and [has participant hasValue Raytest])]"
+      ]
+    },
+    "HMM emission and transition counts": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence file editing": {
+      "subClassOf": [
+        "Sequence analysis",
+        "Sequence editing"
+      ]
+    },
+    "globaltest": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[is published by hasValue Bioconductor]",
+        "[is executed in some descriptive statistical calculation]",
+        "[has specified data output some (Graph plot and [has format specification only R data frame])]",
+        "[implements some globaltest]",
+        "[has specified data input some Gene expression dataset]"
+      ]
+    },
+    "Sequence features": {
+      "subClassOf": [
+        "data"
+      ]
+    },
+    "RNA-Seq alignment": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "DNA nucleotide sequence": {
+      "subClassOf": [
+        "biological sequence data"
+      ]
+    },
+    "Protein-protein interaction prediction (from protein structure)": {
+      "subClassOf": [
+        "Protein structure analysis",
+        "Protein feature detection",
+        "Protein-protein interaction prediction"
+      ]
+    },
+    "Gene expression QTL analysis": {
+      "subClassOf": [
+        "Gene expression data analysis"
+      ],
+      "propertyRestrictions": [
+        "[has output some Pathway or network report]"
+      ]
+    },
+    "Taxonomy": {
+      "subClassOf": [
+        "data",
+        "Evolutionary biology"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Phylogeny]"
+      ]
+    },
+    "Phylogenetic tree report (tree stratigraphic)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Peptide identifier": {
+      "subClassOf": [
+        "Molecule identifier"
+      ]
+    },
+    "pcaMethods": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is encoded in some R language]",
+        "[implements some (Bayesian Model and Expectation-Maximization(EM) algorithm and Nonlinear Estimation by Iterative Partial Least Squares and SVDimpute algorithm)]",
+        "[is published by hasValue Bioconductor]",
+        "[has specified data output some Graph plot]",
+        "[is executed in some (data visualization and cross validation)]",
+        "[has specified data input some [has format specification only R data frame]]"
+      ]
+    },
+    "TraML": {
+      "subClassOf": [
+        "XML",
+        "Mass spectrometry data format"
+      ]
+    },
+    "Sequence checksum generation": {
+      "subClassOf": [
+        "Generation"
+      ],
+      "propertyRestrictions": [
+        "[has input some Sequence]",
+        "[has topic some Data acquisition]"
+      ]
+    },
+    "TCoffee": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some multiple sequence alignment]"
+      ]
+    },
+    "IntAct accession number": {
+      "subClassOf": [
+        "Protein interaction ID"
+      ]
+    },
+    "Protein chemical modifications": {
+      "subClassOf": [
+        "Protein sites, features and motifs"
+      ]
+    },
+    "Microsatellites": {
+      "subClassOf": [
+        "DNA polymorphism"
+      ]
+    },
+    "Medicine": {
+      "subClassOf": [
+        "Topic"
+      ]
+    },
+    "Protein property calculation (from sequence)": {
+      "subClassOf": [
+        "Protein property calculation",
+        "Protein sequence analysis"
+      ]
+    },
+    "'domainsignatures'": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some Gene-Set Enrichment Analysis]",
+        "[is encoded in some R language]",
+        "[has specified data input some Gene list]",
+        "[has specified data output some Graph plot]",
+        "[is executed in some descriptive statistical calculation]"
+      ]
+    },
+    "GeneSNP ID": {
+      "subClassOf": [
+        "Sequence variation ID"
+      ]
+    },
+    "Codon usage bias calculation": {
+      "subClassOf": [
+        "Codon usage analysis"
+      ],
+      "propertyRestrictions": [
+        "[has output some Codon usage bias]"
+      ]
+    },
+    "Clustal": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some multiple sequence alignment]"
+      ]
+    },
+    "nexusnon": {
+      "subClassOf": [
+        "Textual format",
+        "Alignment format (text)",
+        "Sequence record format (text)"
+      ]
+    },
+    "Sequence composition calculation (protein)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "PolyA signal detection": {
+      "subClassOf": [
+        "Nucleic acid sequence feature detection"
+      ]
+    },
+    "OrderedList": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (Gene expression dataset and [has format specification some data format specification])]",
+        "[implements some Similarity score]",
+        "[is encoded in some R language]",
+        "[is executed in some differential expression analysis]",
+        "[has specified data output some (Gene list and [has format specification some data format specification])]"
+      ]
+    },
+    "Gene name (Genolist)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Sequence composition plot": {
+      "subClassOf": [
+        "Sequence composition report",
+        "Plot"
+      ]
+    },
+    "Gene ID (SGN)": {
+      "subClassOf": [
+        "Gene ID"
+      ]
+    },
+    "Plugin": {
+      "subClassOf": [
+        "role"
+      ]
+    },
+    "Restriction enzyme name": {
+      "subClassOf": [
+        "Enzyme name"
+      ]
+    },
+    "Nucleic acid features (siRNA)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Pairwise protein tertiary structure alignment (all atoms)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "SVG": {
+      "subClassOf": [
+        "vector image format"
+      ]
+    },
+    "Dotplot": {
+      "subClassOf": [
+        "Sequence alignment report"
+      ]
+    },
+    "Systems biology": {
+      "subClassOf": [
+        "Biology"
+      ]
+    },
+    "Sequence image": {
+      "subClassOf": [
+        "Sequence report",
+        "Image"
+      ]
+    },
+    "newick": {
+      "subClassOf": [
+        "Textual format",
+        "Phylogenetic tree format (text)"
+      ]
+    },
+    "Codon usage table": {
+      "subClassOf": [
+        "data"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Gene expression]"
+      ]
+    },
+    "Dihedral angle validation": {
+      "subClassOf": [
+        "Protein model validation"
+      ]
+    },
+    "InterPro architecture image": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Reaction ID (KEGG)": {
+      "subClassOf": [
+        "KEGG object identifier",
+        "Reaction ID"
+      ]
+    },
+    "CRAM": {
+      "subClassOf": [
+        "Binary format",
+        "Alignment format (pair only)"
+      ]
+    },
+    "organization": {
+      "subClassOf": [
+        "material entity"
+      ]
+    },
+    "Protein cleavage sites": {
+      "subClassOf": [
+        "Protein sites, features and motifs"
+      ]
+    },
+    "URN": {
+      "subClassOf": [
+        "URI"
+      ]
+    },
+    "Bayesian Model": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "bigBed": {
+      "subClassOf": [
+        "Binary format",
+        "Sequence annotation track format"
+      ]
+    },
+    "Standardization and normalization": {
+      "subClassOf": [
+        "Analysis"
+      ]
+    },
+    "Job metadata": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Platform unrestricted": {
+      "subClassOf": [
+        "Platform clause"
+      ]
+    },
+    "Cellular process pathways report": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "TIGRFam ID": {
+      "subClassOf": [
+        "Protein family accession"
+      ]
+    },
+    "Affymetrix probe sets information library file": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Data security": {
+      "subClassOf": [
+        "Data management"
+      ]
+    },
+    "ARACNE algorithm": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Sequence composition table": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Data retrieval (database cross-reference)": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein structural motif": {
+      "subClassOf": [
+        "Protein structure"
+      ]
+    },
+    "Staden format": {
+      "subClassOf": [
+        "Textual format",
+        "Sequence record format (text)"
+      ]
+    },
+    "ChEBI concept ID": {
+      "subClassOf": [
+        "Ontology concept ID"
+      ]
+    },
+    "ClustalW format": {
+      "subClassOf": [
+        "Textual format",
+        "Alignment format (text)"
+      ]
+    },
+    "Structural data": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "gct": {
+      "subClassOf": [
+        "tab delimited file format"
+      ]
+    },
+    "Protein structural motifs and surfaces": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)",
+        "Protein structure analysis",
+        "Protein sites, features and motifs"
+      ]
+    },
+    "TreeCon format": {
+      "subClassOf": [
+        "Textual format",
+        "Phylogenetic tree format (text)"
+      ]
+    },
+    "'t-test'": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Sequence cluster ID (UniRef)": {
+      "subClassOf": [
+        "Sequence cluster ID"
+      ]
+    },
+    "Pathway ID (PharmGKB)": {
+      "subClassOf": [
+        "Pathway or network accession",
+        "PharmGKB ID"
+      ]
+    },
+    "IRanges": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[is executed in some data normalization]",
+        "[has specified data input some (data and [has format specification some R data frame])]",
+        "[is executed in some decision tree induction]",
+        "[is encoded in some R language]",
+        "[has specified data output some (data and [has format specification some R data frame])]"
+      ]
+    },
+    "CGD gene report format": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Protein sequence properties plot": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "search engine": {
+      "subClassOf": [
+        "software"
+      ],
+      "equivalentClass": [
+        "(software and [is executed in some web content search])"
+      ]
+    },
+    "'codelink'": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[has specified data input some (XML or Text data set)]",
+        "[has specified data output some (Text data set and Graph plot)]",
+        "[is encoded in some R language]",
+        "[is executed in some (background correction and data normalization and descriptive statistical calculation and differential expression analysis)]"
+      ]
+    },
+    "Drug structure": {
+      "subClassOf": [
+        "Small molecule structure"
+      ]
+    },
+    "NMTRAN": {
+      "subClassOf": [
+        "programming language"
+      ]
+    },
+    "Protein residue 3D cluster": {
+      "subClassOf": [
+        "Protein residue interactions"
+      ]
+    },
+    "Position weight matrix (PWM )": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Peptide ID": {
+      "subClassOf": [
+        "Peptide identifier",
+        "Molecule accession"
+      ]
+    },
+    "'MI'": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "Chi-square": {
+      "subClassOf": [
+        "algorithm"
+      ]
+    },
+    "spikeLI": {
+      "subClassOf": [
+        "software"
+      ],
+      "propertyRestrictions": [
+        "[implements some Langmuir Isotherm]",
+        "[is executed in some (descriptive statistical calculation and differential expression analysis)]",
+        "[is encoded in some R language]",
+        "[has specified data input some Gene expression dataset]",
+        "[has specified data output some Graph plot]"
+      ]
+    },
+    "Sequence record format": {
+      "subClassOf": [
+        "Format (typed)"
+      ],
+      "propertyRestrictions": [
+        "[is format of some Sequence record]"
+      ]
+    },
+    "Sequence generation (protein)": {
+      "subClassOf": [
+        "Protein analysis",
+        "Sequence generation"
+      ]
+    },
+    "Protein sequence (raw)": {
+      "subClassOf": [
+        "Protein sequence",
+        "Raw sequence"
+      ]
+    },
+    "DNA-Seq": {
+      "subClassOf": [
+        "Obsolete concept (EDAM)"
+      ]
+    },
+    "Gene features (coding region) format": {
+      "subClassOf": [
+        "Gene annotation format"
+      ]
+    },
+    "Locus ID (Tropgene)": {
+      "subClassOf": [
+        "Locus ID"
+      ]
+    },
+    "Representative sequence identification": {
+      "subClassOf": [
+        "Sequence comparison"
+      ],
+      "propertyRestrictions": [
+        "[has topic some Sequence comparison]"
+      ]
+    },
+    "Molecular medicine": {
+      "subClassOf": [
+        "Translational medicine"
+      ]
+    }
+  },
+  "properties": {
+    "is topic of": {
+      "characteristics": [],
+      "domain": [
+        "Topic"
+      ],
+      "range": [
+        "(data or information processing)"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "has topic"
+      ]
+    },
+    "is executed in": {
+      "characteristics": [],
+      "domain": [
+        "software"
+      ],
+      "range": [
+        "information processing"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "has specified data input": {
+      "characteristics": [],
+      "domain": [
+        "software"
+      ],
+      "range": [
+        "data"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "is version of": {
+      "characteristics": [],
+      "domain": [
+        "version name"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": []
+    },
+    "followed by": {
+      "characteristics": [
+        "Transitive"
+      ],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": [
+        "preceded by"
+      ]
+    },
+    "is published by": {
+      "characteristics": [],
+      "domain": [
+        "(data format specification or software)"
+      ],
+      "range": [
+        "organization"
+      ],
+      "subPropertyOf": [
+        "owl:topObjectProperty"
+      ],
+      "inverseOf": []
+    },
+    "has format specification": {
+      "characteristics": [],
+      "domain": [
+        "information content entity"
+      ],
+      "range": [
+        "data format specification"
+      ],
+      "subPropertyOf": [
+        "is encoded in"
+      ],
+      "inverseOf": []
+    },
+    "has license": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "software license"
+      ],
+      "subPropertyOf": [
+        "is about"
+      ],
+      "inverseOf": []
+    },
+    "is input of": {
+      "characteristics": [],
+      "domain": [
+        "data"
+      ],
+      "range": [
+        "information processing"
+      ],
+      "subPropertyOf": [],
+      "inverseOf": [
+        "has input"
+      ]
+    },
+    "output of": {
+      "characteristics": [],
+      "domain": [
+        "None"
+      ],
+      "range": [
+        "None"
+      ],
+      "subPropertyOf": [
+        "participates in"
+      ],
+      "inverseOf": []
+    }
+  }
+}
