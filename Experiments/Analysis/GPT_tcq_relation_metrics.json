@@ -1,0 +1,108 @@
+{
+    "Type1": {
+        "subClassOf": {
+            "precision (%)": 70.59,
+            "recall (%)": 66.67,
+            "f1_score (%)": 68.57
+        },
+        "equivalentClass": {
+            "precision (%)": 16.67,
+            "recall (%)": 33.33,
+            "f1_score (%)": 22.22
+        },
+        "propertyRestrictions": {
+            "precision (%)": 61.29,
+            "recall (%)": 90.48,
+            "f1_score (%)": 73.08
+        },
+        "disjointWith": {
+            "precision (%)": 100.0,
+            "recall (%)": 38.89,
+            "f1_score (%)": 56.0
+        },
+        "subPropertyOf": {
+            "precision (%)": 100.0,
+            "recall (%)": 33.33,
+            "f1_score (%)": 50.0
+        },
+        "domain": {
+            "precision (%)": 37.5,
+            "recall (%)": 66.67,
+            "f1_score (%)": 48.0
+        },
+        "range": {
+            "precision (%)": 20.0,
+            "recall (%)": 66.67,
+            "f1_score (%)": 30.77
+        },
+        "characteristics": {
+            "precision (%)": 40.0,
+            "recall (%)": 33.33,
+            "f1_score (%)": 36.36
+        },
+        "inverseOf": {
+            "precision (%)": 0.0,
+            "recall (%)": 0.0,
+            "f1_score (%)": 0.0
+        }
+    },
+    "Type2": {
+        "subClassOf": {
+            "precision (%)": 48.89,
+            "recall (%)": 73.33,
+            "f1_score (%)": 58.67
+        },
+        "propertyRestrictions": {
+            "precision (%)": 52.0,
+            "recall (%)": 43.33,
+            "f1_score (%)": 47.27
+        },
+        "disjointWith": {
+            "precision (%)": 100.0,
+            "recall (%)": 38.89,
+            "f1_score (%)": 56.0
+        },
+        "subPropertyOf": {
+            "precision (%)": 66.67,
+            "recall (%)": 16.67,
+            "f1_score (%)": 26.67
+        },
+        "domain": {
+            "precision (%)": 50.0,
+            "recall (%)": 66.67,
+            "f1_score (%)": 57.14
+        },
+        "range": {
+            "precision (%)": 7.14,
+            "recall (%)": 33.33,
+            "f1_score (%)": 11.76
+        },
+        "inverseOf": {
+            "precision (%)": 100.0,
+            "recall (%)": 33.33,
+            "f1_score (%)": 50.0
+        }
+    },
+    "Type3": {
+        "subClassOf": {
+            "precision (%)": 20.0,
+            "recall (%)": 100.0,
+            "f1_score (%)": 33.33
+        },
+        "equivalentClass": {
+            "precision (%)": 100.0,
+            "recall (%)": 66.67,
+            "f1_score (%)": 80.0
+        },
+        "propertyRestrictions": {
+            "precision (%)": 100.0,
+            "recall (%)": 55.56,
+            "f1_score (%)": 71.43
+        },
+        "range": {
+            "precision (%)": 100.0,
+            "recall (%)": 88.89,
+            "f1_score (%)": 94.12
+        }
+    }
+}
