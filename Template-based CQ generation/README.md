@@ -22,7 +22,7 @@ This module generates **Competency Questions (CQs)** from OWL ontologies using a
 1. **Ontology Preprocessing**
 
    - File: `Ontology_processing.py`
-   - Function: Parses ontology files from the `Ontology/` directory, extracts relevant axioms (e.g., `domain`, `range`, `subPropertyOf`, etc.) for each property.
+   - Function: Parses ontology files from the `Ontology/` directory, extracts relevant axioms (e.g., `subClassOf`, `inverseOf`, `subPropertyOf`, etc.) for each term.
    - Output is saved to the `Axiom_per_entity/` folder in a structured JSON format.
 
 2. **CQ Generation**
@@ -35,7 +35,7 @@ This module generates **Competency Questions (CQs)** from OWL ontologies using a
 3. **Postprocessing**
 
    - File: `CQ_postprocessing.py`
-   - Function: Cleans and reformats the generated CQs to make them suitable for further use (e.g., deduplication, normalization).
+   - Function: Cleans and reformats the generated CQs to make them suitable for further use.
    - Final CQs are saved under `Generated CQ/`.
 
 ## ✅ Requirements
