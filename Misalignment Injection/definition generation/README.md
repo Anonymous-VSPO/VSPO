@@ -18,7 +18,6 @@ This directory constructs training data for **misaligned descriptions**, simulat
 ├── description_postprocessing.py # Cleans GPT output and saves to usable format
 ```
 
----
 
 ## 🔄 Workflow
 
@@ -39,6 +38,4 @@ This directory constructs training data for **misaligned descriptions**, simulat
 - **File**: `description_postprocessing.py`  
 - **Purpose**: Converts raw GPT outputs into structured, cleaned definitions.
 - **Output**: Saved in `generated description/`, ready for downstream training or evaluation.
-
----
 
