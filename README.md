@@ -13,7 +13,6 @@ This repository contains the official implementation of our research on **automa
 └── requirements.txt               # Python dependencies
 ```
 
----
 
 ## 🧱 Modules Overview
 
@@ -47,7 +46,6 @@ Analyzes generated CQs and model performance:
 - **Semantic similarity**: Measures alignment between generated and golden semantic pitfall CQs.
 - Outputs are saved for comparison between baseline models and fine-tuned models.
 
----
 
 ## ✅ Requirements
 
@@ -57,9 +55,4 @@ Install all dependencies via:
 pip install -r requirements.txt
 ```
 
----
 
-
----
-
-For more information, please refer to each subdirectory's `README` or contact the authors.
