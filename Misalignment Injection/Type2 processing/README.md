@@ -2,9 +2,6 @@
 
 This directory contains the pipeline for generating **Type 2 misaligned definitions**, where one axiom from a concept's full definition is intentionally omitted in the natural language description.
 
-## 💡 Purpose
-
-The generated data simulates real-world cases where ontology descriptions are **incomplete**, helping models learn to reason even with partially defined entities.
 
 ## 📁 Files Overview
 
@@ -20,7 +17,6 @@ The generated data simulates real-world cases where ontology descriptions are **
 ├── C_example.txt / P_example.txt      # Prompt examples for class and property terms
 ```
 
----
 
 ## 🔄 Pipeline Description
 
@@ -45,11 +41,8 @@ The generated data simulates real-world cases where ontology descriptions are **
   - Final usable output is written to:
     - `Final_type2.json` ← used in training/evaluation.
 
----
 
 ## ✅ Notes
 
 - Only `Final_type2.json` is used in the full dataset pipeline.
-- Examples (`C_example.txt`, `P_example.txt`) are used to condition GPT responses.
-- This type of misalignment mimics missing definition components and is vital for robust model training.
 
