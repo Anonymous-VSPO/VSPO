@@ -22,7 +22,6 @@ Implements the pipeline for rule-based CQ generation from ontologies using templ
 
 - **Ontology preprocessing**: Extracts axioms related to each property/class.
 - **Template-based CQ generation**: Applies logic-based templates to produce natural language CQs.
-- See: `Ontology_processing.py`, `CQ_generation.py`, `CQ_postprocessing.py`.
 
 ### 2. Misalignment Injection
 
