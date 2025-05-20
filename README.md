@@ -1,6 +1,6 @@
-# VSPO: Competency Question Generation from Ontologies
+# VSPO: Validating Semantic Pitfalls in Ontology
 
-This repository contains the official implementation of our research on **automatic Competency Question (CQ) generation** from OWL ontologies. It supports both template-based and LLM-based approaches, incorporating dataset construction, fine-tuning, and evaluation.
+This repository contains the official implementation of our research on **Validating Semantic Pitfalls in Ontology**.
 
 ## 📁 Directory Structure
 
