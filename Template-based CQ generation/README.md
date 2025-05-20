@@ -1,6 +1,6 @@
 # Template-based CQ Generation
 
-This module generates **Competency Questions (CQs)** from OWL ontologies using axiom-specific templates and GPT-based language models.
+This module generates **Competency Questions (CQs)** from OWL ontologies using axiom-specific templates and GPT API.
 
 ## 📁 Directory Overview
 
@@ -43,11 +43,7 @@ This module generates **Competency Questions (CQs)** from OWL ontologies using a
 Make sure to install the dependencies:
 
 ```bash
-pip install -r ../../requirements.txt
+pip install -r ../requirements.txt
 ```
 
-## 📝 Notes
-
-- This module is part of a larger pipeline for aligning natural language CQs with ontological axioms.
-- Generated outputs can be used for fine-tuning or evaluation.
 
