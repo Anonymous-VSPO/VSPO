@@ -1,7 +1,5 @@
 # Misalignment Injection: Full Dataset Construction Pipeline
 
-This directory contains all components necessary to construct the final dataset used for training and evaluating models on **semantically misaligned ontology definitions** and **competency questions (CQs)**.
-
 
 ## 🧩 Step-by-Step Pipeline Overview
 
@@ -30,7 +28,7 @@ This directory contains all components necessary to construct the final dataset 
 - **Script**: `type1,2_processing.py`
 - **Outputs**:
   - `Final_type1.json` → move to `processed types/`
-  - `processed_type2.json` → move to `Type2 processing/`
+  - `processed_type2.json` → move to `Type2 processing/` and process type 2 in `Type2 processing/` directory.
 
 #### ➤ Type 3
 
@@ -56,7 +54,7 @@ This directory contains all components necessary to construct the final dataset 
 - **Outputs**:
   - `merged dataset/` → Combined dataset (all types)
   - `Final dataset/` → Training/test splits with metadata
-  - `additional settings/Generalizability/unseen ontology/` → Extra dataset for unseen ontologies
+  - `additional settings/Generalizability/unseen ontology/` → Extra dataset for unseen ontologies setting
 
 
 ## 📁 Key Files
@@ -67,7 +65,6 @@ This directory contains all components necessary to construct the final dataset 
 ├── type3_processing.py            # Process Type 3 entries
 ├── type4_processing.py            # Process Type 4 entries
 ├── merge_data.py                  # Merge all processed types and split datasets
-├── total_data.json                # Full combined data before splitting
 ```
 
 
