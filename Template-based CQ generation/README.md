@@ -10,11 +10,11 @@ This module generates **Competency Questions (CQs)** from OWL ontologies using a
 ├── CQ_Batchoutput/         # Raw GPT output for each batch
 ├── Generated CQ/           # Final generated CQ files
 ├── Ontology/               # Source ontology (.owl) files
-├── templates/              # Template definitions for each axiom type
+├── templates/              # Template for each axiom type
 ├── CQ_generation.ipynb     # Jupyter notebook version of the CQ pipeline
 ├── CQ_generation.py        # Main script to generate CQs using templates + GPT
-├── CQ_postprocessing.py    # Postprocesses GPT-generated CQs (e.g., formatting, filtering)
-├── Ontology_processing.py  # Extracts axioms from ontologies per property
+├── CQ_postprocessing.py    # Postprocesses GPT-generated CQs 
+├── Ontology_processing.py  # Extracts axioms from ontologies
 ```
 
 ## 🔧 Workflow Description
